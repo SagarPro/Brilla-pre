@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/w_bg">
+
+    <include layout="@layout/flash_header"
+        android:id="@+id/header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/w1"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/w2"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="70dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/w3"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="120dp"
+            android:id="@+id/w4"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/w5"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/w6"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/w7"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/w1"
+            android:layout_toRightOf="@+id/w1"
+            android:id="@+id/w8"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/w1"
+            android:id="@+id/w9"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/w9"
+            android:id="@+id/w10"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/w9"
+            android:layout_alignParentRight="true"
+            android:id="@+id/w11"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/wrong"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ivw1"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/wrong"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/ivw2"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/wrong"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="70dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ivw3"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/wrong"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="120dp"
+            android:id="@+id/ivw4"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/right"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ivw5"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/right"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/ivw6"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/right"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/ivw7"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/right"
+            android:layout_below="@+id/w1"
+            android:layout_toRightOf="@+id/w1"
+            android:id="@+id/ivw8"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/right"
+            android:layout_below="@+id/w1"
+            android:id="@+id/ivw9"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:src="@drawable/wrong"
+            android:layout_below="@+id/w9"
+            android:id="@+id/ivw10"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:src="@drawable/wrong"
+            android:layout_below="@+id/w9"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ivw11"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

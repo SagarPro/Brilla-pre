@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/flash_header"
+        android:id="@+id/header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCount"
+            android:text="You Counted 0 Circles"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textView"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:id="@+id/pot"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/stem1"
+            android:src="@drawable/stem1"
+            android:layout_above="@+id/pot"
+            android:layout_toLeftOf="@+id/stemDistance"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_above="@+id/pot"
+            android:layout_toLeftOf="@+id/stemDistance"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginRight="18dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/right"
+                    android:id="@+id/center_right"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/top_left"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/right"
+                    android:id="@+id/tl_right"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/top_right"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/right"
+                    android:id="@+id/tr_right"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/bottom_left"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/right"
+                    android:id="@+id/bl_right"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/bottom_right"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/right"
+                    android:id="@+id/br_right"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:id="@+id/stemDistance"
+            android:layout_above="@+id/pot"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_above="@+id/pot"
+            android:layout_toRightOf="@+id/stemDistance"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/yellow_flower"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/yellow_circle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/right"
+                    android:id="@+id/yc_right"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/stem2"
+                android:id="@+id/stem2"
+                android:layout_marginTop="-35dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

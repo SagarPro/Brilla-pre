@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.brightkidmont.brilla">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+
+    <application
+        android:name=".ScreenOrientation"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/CustomActionBar">
+
+        <activity android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".EnrollActivity"
+            android:theme="@style/CustomActionBar" />
+        <activity android:name=".HomePageActivity" />
+        <activity android:name=".interactions.PickingFoodActivity" />
+        <activity android:name=".interactions.PickFoodActivity" />
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".ApprovalActivity" />
+        <activity android:name=".SuperAdminActivity" />
+        <activity android:name=".PreschoolDetailsActivity" />
+        <activity android:name=".UserDetailsActivity" />
+        <activity android:name=".GuestUserActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".GuestUsersListActivity" />
+        <activity android:name=".GuestDetailsActivity" />
+        <activity android:name=".interactions.FlashListActivity" />
+        <activity android:name=".interactions.DressActivity" />
+        <activity android:name=".interactions.ColorsActivity" />
+        <activity android:name=".my_bright_brain.visual.colors.red.RedActivity" />
+        <activity android:name=".my_bright_brain.visual.colors.black.BlackActivity" />
+        <activity android:name=".my_bright_brain.visual.colors.orange.OrangeActivity" />
+        <activity android:name=".my_bright_brain.visual.colors.blue.BlueActivity" />
+        <activity android:name=".my_bright_brain.visual.colors.brown.BrownActivity" />
+        <activity android:name=".my_bright_brain.visual.colors.green.GreenActivity" />
+        <activity android:name=".my_bright_brain.visual.colors.grey.GreyActivity" />
+        <activity android:name=".my_bright_brain.visual.colors.pink.PinkActivity" />
+        <activity android:name=".my_bright_brain.visual.colors.purple.PurpleActivity" />
+        <activity android:name=".my_bright_brain.visual.colors.white.WhiteActivity" />
+        <activity android:name=".my_bright_brain.visual.colors.yellow.YellowActivity" />
+        <activity android:name=".interactions.ShapesActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".my_bright_brain.visual.shapes.shapes_2d.arrow.ArrowActivity" />
+        <activity android:name=".my_bright_brain.visual.shapes.shapes_2d.circle.CircleActivity" />
+        <activity android:name=".my_bright_brain.visual.shapes.shapes_2d.cross.CrossActivity" />
+        <activity android:name=".my_bright_brain.visual.shapes.shapes_2d.oval.OvalActivity" />
+        <activity android:name=".my_bright_brain.visual.shapes.shapes_2d.pentagon.PentagonActivity" />
+        <activity android:name=".my_bright_brain.visual.shapes.shapes_2d.rectangle.RectangleActivity" />
+        <activity android:name=".my_bright_brain.visual.shapes.shapes_2d.rhombus.RhombusActivity" />
+        <activity android:name=".my_bright_brain.visual.shapes.shapes_2d.square.SquareActivity" />
+        <activity android:name=".my_bright_brain.visual.shapes.shapes_2d.star.StarActivity" />
+        <activity android:name=".my_bright_brain.visual.shapes.shapes_2d.trapezium.TrapeziumActivity" />
+        <activity android:name=".my_bright_brain.visual.shapes.shapes_2d.triangle.TriangleActivity" />
+        <activity android:name=".my_bright_brain.auditory.AuditoryActivity" />
+        <activity android:name=".my_bright_brain.visual.logical_thinking.LogicalThinkingActivity" />
+        <activity android:name=".my_bright_brain.visual.jigsaw_puzzles.JigsawPuzzlesActivity" />
+        <activity android:name=".my_bright_brain.visual.visual_discrimination.VisualDiscriminationActivity" />
+        <activity android:name=".my_bright_brain.visual.riddles.RiddlesActivity"/>
+        <activity android:name=".my_bright_brain.visual.DrawingPadActivity"/>
+    </application>
+
+</manifest>

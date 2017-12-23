@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/flash_header"
+        android:id="@+id/header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textView"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/trap_e1"/>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="-10dp"
+                    android:id="@+id/empty_trap"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/linearLayout1"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/ll_half_trap">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="150dp"
+                android:id="@+id/trap_e2"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            android:id="@+id/square_e"
+            android:layout_toRightOf="@+id/linearLayout1"
+            android:layout_below="@+id/ll_half_trap"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            android:id="@+id/tri_e"
+            android:layout_toRightOf="@+id/linearLayout1"
+            android:layout_below="@id/square_e"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

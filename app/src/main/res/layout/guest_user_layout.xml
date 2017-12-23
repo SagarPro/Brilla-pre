@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:id="@+id/guest_user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/login_gradient">
+
+        <ProgressBar
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="5dp"
+            android:id="@+id/guestProgress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guest User"
+            android:textSize="26sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/tvGuest"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:background="@drawable/guest_layout_bg"
+            android:textColorHint="#BDBDBD"
+            android:elevation="5dp"
+            android:layout_below="@id/tvGuest"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:id="@+id/etGuestName"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:background="@drawable/guest_layout_bg"
+            android:textColorHint="#BDBDBD"
+            android:elevation="5dp"
+            android:layout_below="@id/etGuestName"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:id="@+id/etGuestPhone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/guest_layout_bg"
+            android:textColorHint="#BDBDBD"
+            android:elevation="5dp"
+            android:layout_below="@id/etGuestPhone"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:id="@+id/etGuestEmail"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:inputType="text"
+            android:background="@drawable/guest_layout_bg"
+            android:textColorHint="#BDBDBD"
+            android:elevation="5dp"
+            android:layout_below="@id/etGuestEmail"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:id="@+id/etGuestLocation"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etGuestLocation"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/rlTC">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:id="@+id/cbTC"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms and Conditions"
+                android:textColor="#E0E0E0"
+                android:textSize="16sp"
+                android:id="@+id/tvTC"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlTC"
+            android:text="Register"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:id="@+id/btnGuestRegister"
+            android:background="@drawable/login_button_bg"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/llSignup"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnGuestRegister"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account ? "
+                android:textSize="16sp"
+                android:textColor="#BDBDBD"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log in"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:id="@+id/tvLogin"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll">
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="5dp"
+            android:id="@+id/pbStory"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_layout_bg"
+            android:text="Play Video"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:elevation="5dp"
+            android:id="@+id/play_button"/>
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:id="@+id/vvStory"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        android:id="@+id/ll">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Who wins the race?"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:background="@color/fbutton_color_midnight_blue"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/fbutton_color_midnight_blue"
+            android:id="@+id/rg">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="Both of them"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn1"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="Hare"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn2"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="Tortoise"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn3"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="Neither of them"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn4"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:background="@color/fbutton_color_midnight_blue"
+            android:layout_margin="3dp"
+            android:id="@+id/btnSubmit"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

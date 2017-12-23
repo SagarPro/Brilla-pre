@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/flash_header"
+        android:id="@+id/header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_circle2"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/back_circle2" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/tv_stand"
+            android:id="@+id/tv_stand"
+            android:layout_marginBottom="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/right"
+            android:id="@+id/tv_stand_right"
+            android:layout_marginBottom="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/wall_clock"
+            android:src="@drawable/wall_clock"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/wall_clock_wrong"
+            android:src="@drawable/wrong"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/mirror"
+            android:src="@drawable/mirror"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/mirror_wrong"
+            android:src="@drawable/wrong"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:background="@drawable/cuboard"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="90dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/cuboard"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:background="@drawable/right"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="90dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/cuboard_right"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/television"
+            android:layout_marginBottom="175dp"
+            android:layout_marginLeft="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_above="@+id/back_circle2"
+            android:id="@+id/television"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/right"
+            android:layout_marginBottom="175dp"
+            android:layout_marginLeft="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_above="@+id/back_circle2"
+            android:id="@+id/television_right"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/frame"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ivLamp"
+            android:id="@+id/frame"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/right"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ivLamp"
+            android:id="@+id/frame_right"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/lamp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ivLamp"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/wrong"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ivLamp_wrong"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/chair"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="90dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/chair"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/wrong"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="90dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/chair_wrong"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

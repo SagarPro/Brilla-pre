@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/flash_header"
+        android:id="@+id/header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/llOrange"
+                android:gravity="center"
+                android:background="@drawable/orangec"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORANGE"
+                android:id="@+id/orange"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/fbutton_color_carrot"
+                android:layout_below="@+id/llOrange"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue"
+                android:textSize="25dp"
+                android:id="@+id/tvBlue"
+                android:layout_marginBottom="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/fbutton_color_carrot"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orange"
+                android:textSize="25dp"
+                android:id="@+id/tvOrange"
+                android:layout_marginBottom="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/fbutton_color_carrot"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yellow"
+                android:textSize="25dp"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/tvYellow"
+                android:textStyle="bold"
+                android:textColor="@color/fbutton_color_carrot"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red"
+                android:textSize="25dp"
+                android:id="@+id/tvRed"
+                android:textStyle="bold"
+                android:textColor="@color/fbutton_color_carrot"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

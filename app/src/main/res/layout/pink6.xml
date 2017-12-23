@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/flash_header"
+        android:id="@+id/header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/header">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/pink"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/underline"
+            android:orientation="horizontal"
+            android:layout_below="@id/pink"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/llP"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/underline"/>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/llI"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/underline"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/llN"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/underline"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/llK"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/underline"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_above="@+id/refresh"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llI1">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/tvI"
+                    android:text="I"
+                    android:textSize="55dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/f_pink"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llP1">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/tvP"
+                    android:text="P"
+                    android:textSize="55dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/f_pink"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llK1">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/tvK"
+                    android:text="K"
+                    android:textSize="55dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/f_pink"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llN1">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/tvN"
+                    android:text="N"
+                    android:textSize="55dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/f_pink"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <info.hoang8f.widget.FButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fbutton:buttonColor="@color/f_pink"
+            fbutton:shadowColor="@color/fbutton_color_asbestos"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:text="Refresh"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:id="@+id/refresh"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

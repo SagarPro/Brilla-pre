@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/flash_header"
+        android:id="@+id/header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/peacock"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Purple"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:id="@+id/tvPurple"
+                android:layout_marginBottom="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/fbutton_color_emerald"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textSize="35dp"
+                android:id="@+id/ivPurple"
+                android:layout_above="@+id/tvGreen"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/wrong"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Green"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:id="@+id/tvGreen"
+                android:layout_marginBottom="50dp"
+                android:layout_below="@+id/tvPurple"
+                android:textStyle="bold"
+                android:textColor="@color/fbutton_color_emerald"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textSize="35dp"
+                android:id="@+id/ivGreen"
+                android:layout_below="@+id/tvPurple"
+                android:layout_above="@+id/tvYellow"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/right"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yellow"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:id="@+id/tvYellow"
+                android:layout_marginBottom="50dp"
+                android:layout_below="@+id/tvGreen"
+                android:textStyle="bold"
+                android:textColor="@color/fbutton_color_emerald"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textSize="35dp"
+                android:id="@+id/ivYellow"
+                android:layout_marginBottom="50dp"
+                android:layout_below="@+id/tvGreen"
+                android:layout_above="@+id/tvBlack"
+                android:src="@drawable/wrong"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Black"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_below="@+id/tvYellow"
+                android:id="@+id/tvBlack"
+                android:textStyle="bold"
+                android:textColor="@color/fbutton_color_emerald"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textSize="35dp"
+                android:id="@+id/ivBlack"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/tvYellow"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/wrong"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

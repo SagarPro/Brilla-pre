@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/fbutton_color_midnight_blue"
+        android:padding="10dp"
+        android:id="@+id/rl1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlQuestion1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I am an odd number, take away an alphabet and I become even. What number am I?"
+                android:textSize="24sp"
+                android:textColor="#fff"
+                android:layout_toLeftOf="@+id/speaker1"
+                android:id="@+id/tvQuestion1"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/speaker"
+                android:layout_alignParentRight="true"
+                android:id="@+id/speaker1"/>
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlQuestion1"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/rg1">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="Eleven"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn11"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="Seven"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn21"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="Nine"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn31"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/fbutton_color_midnight_blue"
+        android:layout_below="@+id/rl1"
+        android:padding="10dp"
+        android:id="@+id/rl2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlQuestion2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How many months have 28 days?"
+                android:textSize="24sp"
+                android:textColor="#fff"
+                android:layout_toLeftOf="@+id/speaker2"
+                android:id="@+id/tvQuestion2"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/speaker"
+                android:layout_alignParentRight="true"
+                android:id="@+id/speaker2"/>
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlQuestion2"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/rg2">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="12"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn12"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="6"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn22"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn32"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/fbutton_color_midnight_blue"
+        android:layout_below="@+id/rl2"
+        android:padding="10dp"
+        android:id="@+id/rl3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlQuestion3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" What belongs to you but other people use it more than you?"
+                android:textSize="24sp"
+                android:textColor="#fff"
+                android:layout_toLeftOf="@+id/speaker3"
+                android:id="@+id/tvQuestion3"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/speaker"
+                android:layout_alignParentRight="true"
+                android:id="@+id/speaker3"/>
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlQuestion3"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/rg3">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="Your Dress"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn13"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="Your Food"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn23"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="Your Name"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn33"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/fbutton_color_midnight_blue"
+        android:layout_below="@+id/rl3"
+        android:padding="10dp"
+        android:id="@+id/rl4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlQuestion4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The more you take, the more you leave behind. What are they?"
+                android:textSize="24sp"
+                android:textColor="#fff"
+                android:layout_toLeftOf="@+id/speaker4"
+                android:id="@+id/tvQuestion4"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/speaker"
+                android:layout_alignParentRight="true"
+                android:id="@+id/speaker4"/>
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlQuestion4"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/rg4">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="Money"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn14"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="FootPrints"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn24"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="Friends"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/rbtn34"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:layout_below="@+id/rl4"
+        android:background="@color/fbutton_color_midnight_blue"
+        android:layout_margin="3dp"
+        android:id="@+id/btnSubmit"/>
+
+</RelativeLayout>
+
+</ScrollView>

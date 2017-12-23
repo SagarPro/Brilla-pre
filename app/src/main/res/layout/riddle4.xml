@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fbutton_color_wet_asphalt">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/speaker"
+        android:layout_above="@+id/rg"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:id="@+id/speaker"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_above="@+id/rg"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        android:id="@+id/ivRiddle4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/riddle4"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:id="@+id/tvRiddleQuestion"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSubmit"
+        android:layout_margin="5dp"
+        android:id="@+id/rg">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#fff"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:id="@+id/rbtn1"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#fff"
+            android:text="23"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:id="@+id/rbtn2"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#fff"
+            android:text="4"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:id="@+id/rbtn3"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:background="@color/fbutton_color_midnight_blue"
+        android:layout_margin="3dp"
+        android:id="@+id/btnSubmit"/>
+
+</RelativeLayout>

@@ -1,0 +1,849 @@
+<resources>
+    <string name="app_name">Brilla Pre</string>
+    <string name="google_maps_key">AIzaSyDQ1YKBhdT0kr0qy4ZN2LTtXExvqUggWaY</string>
+    <string name="title_activity_location">Map</string>
+    <string name="spinner_title">Select Category</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Terms_and_conditions">Please provide valid Email-Id and Phone Number as we will send your login details to those info.\n\nSMS charges are applicable as per your network.\n\nGuest users account will be expired after 7 days from registration.</string>
+    <string name="Users_Terms_and_conditions">Please provide valid Email-Id and Phone Number as we will send your login details to those info.\n\nSMS charges are applicable as per your network.</string>
+    <string name="Title_tc"><u>Terms and Conditions</u></string>
+    <string name="Title_guest_dialog"><u>Guest User Details</u></string>
+    <string name="Title_user_dialog"><u>User Details</u></string>
+    <string name="sms_permission"><u>SMS Permission Required</u></string>
+    <string name="storage_permission"><u>Storage Permission Required</u></string>
+    <string name="riddle4">James picked up 23 apples, from which 5 are given to Jack, 7 are given to Jessi and 4 are given to you. James ate 3 apples and 4 were rotten apples.\n\nHow many good apples are you left with? </string>
+
+    <!--food names-->
+    <string-array name="breakfast_names">
+        <item>apple</item>
+        <item>banana</item>
+        <item>cereals</item>
+        <item>cheese</item>
+        <item>corn salad</item>
+        <item>dosa</item>
+        <item>egg</item>
+        <item>idly</item>
+        <item>milkshake</item>
+        <item>muffin</item>
+        <item>nuts</item>
+        <item>pancake</item>
+        <item>papaya</item>
+        <item>paratha</item>
+        <item>pavbhaji</item>
+        <item>poha</item>
+        <item>poori</item>
+        <item>sandwich</item>
+        <item>tikkis</item>
+        <item>upma</item>
+    </string-array>
+
+    <string-array name="lunch_names">
+        <item>buttermilk</item>
+        <item>chapathi</item>
+        <item>chicken</item>
+        <item>curd rice</item>
+        <item>curry</item>
+        <item>dhal</item>
+        <item>fish</item>
+        <item>kichidi</item>
+        <item>lassi</item>
+        <item>omelette</item>
+        <item>paneer</item>
+        <item>papad</item>
+        <item>paratha</item>
+        <item>payesa</item>
+        <item>puloa</item>
+        <item>rice</item>
+        <item>sambar</item>
+        <item>shrikhand</item>
+        <item>veg curry</item>
+        <item>veg rolls</item>
+    </string-array>
+
+    <string-array name="snacks_names">
+        <item>apple pie</item>
+        <item>banana pieces</item>
+        <item>banana walnut cake</item>
+        <item>bhelpuri</item>
+        <item>biscuits</item>
+        <item>carrot cucumber</item>
+        <item>cookies</item>
+        <item>dahivada</item>
+        <item>gulab jamoon</item>
+        <item>laddu</item>
+        <item>rasgulla</item>
+    </string-array>
+
+    <string-array name="dinner_names">
+        <item>biryani</item>
+        <item>chapathi</item>
+        <item>chicken curry</item>
+        <item>curd rice</item>
+        <item>egg rice</item>
+        <item>fish fried rice</item>
+        <item>kebabs</item>
+        <item>mashroom masala</item>
+        <item>mutton biryani</item>
+        <item>paneer</item>
+        <item>papad</item>
+        <item>paratha</item>
+        <item>payesa</item>
+        <item>rice</item>
+        <item>roti</item>
+        <item>sambar</item>
+        <item>veg curry</item>
+        <item>veg puloa</item>
+    </string-array>
+
+    <!--food items that are added only one on plate-->
+    <string-array name="food_items">
+        <item>cereals</item>
+        <item>corn salad</item>
+        <item>dosa</item>
+        <item>idly</item>
+        <item>pancake</item>
+        <item>paratha</item>
+        <item>pavbhaji</item>
+        <item>poha</item>
+        <item>poori</item>
+        <item>tikkis</item>
+        <item>upma</item>
+        <item>chapathi</item>
+        <item>chicken</item>
+        <item>curd rice</item>
+        <item>curry</item>
+        <item>dhal</item>
+        <item>fish</item>
+        <item>kichidi</item>
+        <item>omelette</item>
+        <item>paneer</item>
+        <item>papad</item>
+        <item>payesa</item>
+        <item>puloa</item>
+        <item>rice</item>
+        <item>sambar</item>
+        <item>shrikhand</item>
+        <item>veg curry</item>
+        <item>veg rolls</item>
+        <item>buttermilk</item>
+        <item>lassi</item>
+        <item>biryani</item>
+        <item>chicken curry</item>
+        <item>egg rice</item>
+        <item>fish fried rice</item>
+        <item>kebabs</item>
+        <item>mashroom masala</item>
+        <item>mutton biryani</item>
+        <item>roti</item>
+        <item>veg puloa</item>
+        <item>apple pie</item>
+        <item>banana pieces</item>
+        <item>banana walnut cake</item>
+        <item>bhelpuri</item>
+        <item>biscuits</item>
+        <item>carrot cucumber</item>
+        <item>cookies</item>
+        <item>dahivada</item>
+        <item>gulab jamoon</item>
+        <item>laddu</item>
+        <item>rasgulla</item>
+    </string-array>
+
+    <string-array name="food_viewPager">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FVIew%20Pager%2Ffood_morning.png?alt=media\u0026token=59cce8d6-e690-4c12-9974-08924d44fe9f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FVIew%20Pager%2Ffood_afternoon.png?alt=media\u0026token=5fa66873-df1a-4cab-9c17-a16472aff907</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FVIew%20Pager%2Ffood_evening.png?alt=media\u0026token=ea4b2b9b-66be-4c61-8325-5c3905ca78df</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FVIew%20Pager%2Ffood_night.png?alt=media\u0026token=644463fe-a279-4f09-8eda-2baf8f0fef6c</item>
+    </string-array>
+
+    <!--food images-->
+    <string-array name="breakfast">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_apple.png?alt=media\u0026token=58633153-bd1c-46da-9e24-deca223160eb</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_banana.png?alt=media\u0026token=4c0195ab-59be-4554-8460-659eeed580dd</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_cereals.png?alt=media\u0026token=fc19bdae-528a-4f00-adcb-3b5491cda8e7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_cheeze.png?alt=media\u0026token=72d57291-a595-41e8-8b4b-806dd254ef1a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_corn_salad.png?alt=media\u0026token=4e774e20-7857-4e13-b35e-61cbd3150f29</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_dosa.png?alt=media\u0026token=e728261b-b17f-4f33-b8a0-d0dccb3ddbde</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_egg.png?alt=media\u0026token=05beaaf6-513f-4871-a493-88105582a8b5</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_idli.png?alt=media\u0026token=240ef66d-0331-4086-af9e-4f37dbdbc80a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_milkshake.png?alt=media\u0026token=05dff975-6b34-4c8f-9041-c0392debde06</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_muffin.png?alt=media\u0026token=02f3d43c-1b08-4141-bab2-2131fdfc91b2</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_nuts.png?alt=media\u0026token=40f27106-425d-4ce5-87c5-2effaef7f20b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_pancake.png?alt=media\u0026token=40c0bce3-6943-466c-a97d-37764cca96c6</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_papaya.png?alt=media\u0026token=313a16e6-931b-42bb-bf12-e0f60358855c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_paratha.png?alt=media\u0026token=3487e61f-0e97-42af-ae5a-286730a9d73f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_pavbhaji.png?alt=media\u0026token=edf87a17-3ef9-4243-a140-2408840e42d3</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_poha.png?alt=media\u0026token=baa78fe5-4c5c-4654-abe3-ab29904a4551</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_poori.png?alt=media\u0026token=30af59dc-0ea1-4db2-a734-74e354ce1bc4</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_sandwich.png?alt=media\u0026token=5b56f651-8318-4daf-8dff-39c0db91d62c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_tikkis.png?alt=media\u0026token=155bcdb9-0a0a-4c96-b8f7-2ad0a6ed0416</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2Fbf_upma.png?alt=media\u0026token=c40f6c82-136e-4f3c-811a-e769c1628282</item>
+    </string-array>
+
+    <string-array name="breakfast_audio">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fapple.mp3?alt=media\u0026token=dcc78ab2-0f5a-46c9-a579-cbe7224f6be1</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fbanana.mp3?alt=media\u0026token=55ca96d3-2c31-41a8-817f-6498a0e89e68</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fcereals.mp3?alt=media\u0026token=5c9c98d7-4e70-4087-93a7-3ffa8dcc3126</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fcheese.mp3?alt=media\u0026token=5d6e955c-79d0-4765-9ce3-dae695688e10</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fcorn_salad.mp3?alt=media\u0026token=886600bf-8c17-45c3-bc3d-d66bdb9d29a2</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fdosa.mp3?alt=media\u0026token=4bf6de18-1491-430d-bf18-3eea2052addc</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fegg.mp3?alt=media\u0026token=89b71953-106b-4463-b1a2-270f08653772</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fidly.mp3?alt=media\u0026token=cab17da4-ba3a-458d-a570-cf1e23fa02e1</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fmilk_shake.mp3?alt=media\u0026token=6655b6ac-714d-4caa-ada5-102450671008</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fmuffin.mp3?alt=media\u0026token=fb5a2d7b-d267-4124-aa8b-8654d56376f8</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fnuts.mp3?alt=media\u0026token=f6ac7b83-228c-47ab-b0ac-8d5ebf656f92</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fpan_cake.mp3?alt=media\u0026token=1f338280-563b-44bb-a592-1d750cc4eff5</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fpapaya_pieces.mp3?alt=media\u0026token=49a5acf6-2e41-4ff4-b292-d099415a713c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fparatha.mp3?alt=media\u0026token=27940ad4-f968-486b-b91a-56b03651be4e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fpav_baji.mp3?alt=media\u0026token=5259ce54-4d00-4ee8-a187-5d4f98c0de5b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fpoha.mp3?alt=media\u0026token=2ad46dfc-eef7-4cf9-b036-50ccd0de6640</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fpoori.mp3?alt=media\u0026token=81f0f56e-4a8b-4aa5-ac82-7aa6f1031c58</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fsanwitch.mp3?alt=media\u0026token=289d8154-6050-4fc6-ac06-a294705971cd</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Ftikkis.mp3?alt=media\u0026token=329d9e59-f2b5-411a-baa6-8712fd64d8d3</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FBreak%20Fast%2FAudio%2Fupma.mp3?alt=media\u0026token=997ac61c-d072-4bba-b866-8a65bcfa0ea7</item>
+    </string-array>
+
+    <string-array name="lunch">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_buttermilk.png?alt=media\u0026token=85c2ed15-d0f0-4f9d-a89f-a4c5ac2ea33c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_chapathi.png?alt=media\u0026token=1eea8fdd-d1e4-41f0-8c49-249a7b36f7a7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_chicken.png?alt=media\u0026token=5ebb2567-9918-44c7-820c-2c523e38f4b7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_curd_rice.png?alt=media\u0026token=39f4a1f2-3e4a-472e-a4d6-65a1984c2410</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_curry.png?alt=media\u0026token=53dfa4de-d54f-4bc1-be01-516bf0fdaeb7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_dal.png?alt=media\u0026token=516eca08-e441-422e-9313-0d8de26b4085</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_fish.png?alt=media\u0026token=2c1e626d-8f75-48cc-936c-a3defca3f4c0</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_khichidi.png?alt=media\u0026token=1e1c9800-218b-4dd2-ad74-bfad54614dd5</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_lassi.png?alt=media\u0026token=4a1aa8f0-187c-467a-9d49-9875f5ad62fa</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_omlette.png?alt=media\u0026token=ca0fb9ba-7778-426e-80b1-7c8036f6af92</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_paneer.png?alt=media\u0026token=66acb21e-f875-41aa-9296-11977cb95cec</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_papad.png?alt=media\u0026token=0c3ca461-da0d-434a-92b2-073903aa1b94</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_parata.png?alt=media\u0026token=c369d1ad-7fb2-4f61-809b-0d65f563e7e8</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_payesa.png?alt=media\u0026token=66bb6466-1710-4709-abc7-3ff145e00c8a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_puloa.png?alt=media\u0026token=bd9a5494-94ad-4d0c-aece-de762d934246</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_rice.png?alt=media\u0026token=ed81db81-de21-455a-b602-773e38906648</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_sambar.png?alt=media\u0026token=400474ec-a2f0-44fe-9681-e440ec995b0c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_srikhand.png?alt=media\u0026token=741cb2f8-9036-4f66-88c8-995e9333fb23</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_veg_curry.png?alt=media\u0026token=8fc338a3-96a7-49f5-8089-4b38ca31f592</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2Fl_veg_rolls.png?alt=media\u0026token=078a9020-741a-4c62-be62-cab64aa691db</item>
+    </string-array>
+
+    <string-array name="lunch_audio">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fbutter_milk.mp3?alt=media\u0026token=d88561f0-3668-4406-a9d7-f2c1e0515798</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fchapathi.mp3?alt=media\u0026token=0f7d43b8-a0c4-4102-affe-1ad269a71441</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fchicken.mp3?alt=media\u0026token=a4903cdc-432e-4502-9643-4afee5e3ad99</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fcurd_rice.mp3?alt=media\u0026token=a22d90c9-9dcc-4871-bc2f-5e97e4d6a2ae</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fcurry.mp3?alt=media\u0026token=b1882208-f344-4230-8d62-d4695dea5dad</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fdal.mp3?alt=media\u0026token=e45ba491-2ed2-47bd-ad44-b3da770b9cf0</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Ffish.mp3?alt=media\u0026token=5b368eb2-7711-414b-a031-6f997d5c6546</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fkichidi.mp3?alt=media\u0026token=b9b19ecd-9629-4aa1-aaaa-5ed1943d6b22</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Flassi.mp3?alt=media\u0026token=d81bd7f1-93c1-46cf-9021-9f4a4138e4f2</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fomlette.mp3?alt=media\u0026token=c62c34e2-af00-49ae-b732-7a2ad0ba04db</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fpaneer.mp3?alt=media\u0026token=b0450ef2-e555-4c40-8f98-72379533e6b3</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fpapad.mp3?alt=media\u0026token=8498cff1-2aa4-45be-90fe-1f64f3f9a51d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fparatha.mp3?alt=media\u0026token=6f618b47-3f55-4520-9774-abf6bfb06f94</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fpayesha.mp3?alt=media\u0026token=5fc7120e-03d2-4109-9873-3764b1a31650</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fpulov.mp3?alt=media\u0026token=935f6799-895c-45d9-a97d-6b46c062a697</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Frice.mp3?alt=media\u0026token=e37ac623-3e4d-4485-bf80-a279949aaeca</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fsambar.mp3?alt=media\u0026token=5da3085a-ce92-4112-ae1d-cfa22a0004ed</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fshree_khand.mp3?alt=media\u0026token=ad6c8b2c-4d2f-4fdf-933b-ca702e68397e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fveg_curry.mp3?alt=media\u0026token=0bf67774-f20d-4f72-b949-2d02f24affe6</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FLunch%2FAudio%2Fveg_rolls.mp3?alt=media\u0026token=609b021b-c4f8-4422-ac4f-25ed8b9942a0</item>
+    </string-array>
+
+    <string-array name="snacks">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2Fs_apple_pie.png?alt=media\u0026token=0d4bb90e-e897-46c1-b1cc-dc2539220f3d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2Fs_banana.png?alt=media\u0026token=119c0e38-c14e-42df-8b96-bc353e1ba3ce</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2Fs_banana_walnut_cake.png?alt=media\u0026token=4d999b82-0f1a-4bc1-b407-775dd2e66586</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2Fs_bhelpuri.png?alt=media\u0026token=c6907160-c316-46db-9d7e-d78240de4898</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2Fs_biscuits.png?alt=media\u0026token=ac116e30-2532-4084-a62e-e431162c3ffa</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2Fs_carrot_cucumber.png?alt=media\u0026token=ea11adf7-09fe-4009-976e-846fdce6642c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2Fs_cookies.png?alt=media\u0026token=365b8c1f-f493-4508-a2b6-86226df0d340</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2Fs_dahivada.png?alt=media\u0026token=34eabcc8-2d14-46cb-8f7d-27d6f63c8630</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2Fs_gulab_jamun.png?alt=media\u0026token=7f314699-bcf7-40f6-a11d-229f43aed04d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2Fs_laddu.png?alt=media\u0026token=da433e76-7e1e-46d8-9c1d-7c51fdd1970f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2Fs_rasgulla.png?alt=media\u0026token=929970d8-a973-4976-9b1b-393979639b84</item>
+    </string-array>
+
+    <string-array name="snacks_audio">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2FAudio%2Fapple_pie.mp3?alt=media\u0026token=10c461e6-640f-4377-ad84-00a8442f9d5a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2FAudio%2Fbanana_pieces.mp3?alt=media\u0026token=126a53f8-3073-45f8-bd03-0a395f1b4a38</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2FAudio%2Fbanana_cake.mp3?alt=media\u0026token=fb517ad7-78ce-4a6c-8869-ca7df1cf51b3</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2FAudio%2Fbhel_puri.mp3?alt=media\u0026token=cb6a748e-8b33-4bb2-b331-1e12f2fde679</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2FAudio%2Fbuiscuits.mp3?alt=media\u0026token=4bf0bccf-02c3-42ba-838b-c33c558f7966</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2FAudio%2Fcarrot_cucumber.mp3?alt=media\u0026token=66284589-cf4a-432c-aab1-edc950b36f1e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2FAudio%2Fcookies.mp3?alt=media\u0026token=9d277adf-7631-4862-b9d5-4791cb93c096</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2FAudio%2Fdahi_vada.mp3?alt=media\u0026token=f1726b76-64fd-4496-9599-4e811fe9fa67</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2FAudio%2Fgulab_jamoon.mp3?alt=media\u0026token=21b2d9eb-0756-4233-93d6-3d6f65331486</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2FAudio%2Fladdu.mp3?alt=media\u0026token=89a31a04-b5ac-41f5-8e34-adbd4f215c06</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FSnacks%2FAudio%2Frasgulla.mp3?alt=media\u0026token=e14ec8c7-fd3e-49ed-a621-62eb8e35beab</item>
+    </string-array>
+
+    <string-array name="dinner">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_biryani.png?alt=media\u0026token=554302d6-8f43-45b0-ba40-c9f5c8411b92</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_chapatti.png?alt=media\u0026token=58217003-c041-4b41-9ca3-9fdc88465343</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_chicken_curry.png?alt=media\u0026token=ba403bde-c7d4-4a44-9abe-31c71be6b326</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_curd_rice.png?alt=media\u0026token=dad46cae-e7f1-453f-b748-5fd5c16ee2a8</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_egg_rice.png?alt=media\u0026token=74b28d13-3e3b-448b-ace6-3dc4365a0fc3</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_fish_fried_rice.png?alt=media\u0026token=6b8c1671-fdc8-42d1-85f6-25a23d9158e7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_kebabs.png?alt=media\u0026token=6f44d527-00fc-42b0-9265-a794cc6b7c80</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_mashroom_masala.png?alt=media\u0026token=8f044b20-905b-4b5e-9478-92c90bb47a9a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_mutton_biryani.png?alt=media\u0026token=ea8ca6a1-b73c-4567-bf18-90948a2ecbf5</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_paneer.png?alt=media\u0026token=bd615d2b-68ad-4d6b-9239-a17dffdb4681</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_papad.png?alt=media\u0026token=1cd01670-0350-4658-8813-3150b273b253</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_paratha.png?alt=media\u0026token=51078499-0b04-4029-9010-f80d25357d84</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_payesha.png?alt=media\u0026token=08c11801-7a51-487c-b1ba-fb4f731abefb</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_rice.png?alt=media\u0026token=a38083c3-70f7-4b7a-a185-8e1727ff44ce</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_roti.png?alt=media\u0026token=28ca7968-fb56-41ed-9082-7fe2c4418c9d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_sambar.png?alt=media\u0026token=d22562cf-04b2-426b-b51e-0f739618216b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_veg_curry.png?alt=media\u0026token=750e684e-9012-420b-9b67-05c01e100f21</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2Fd_veg_pulav.png?alt=media\u0026token=6ff1ee60-06f9-4853-916b-4f8d50bbd204</item>
+    </string-array>
+
+    <string-array name="dinner_audio">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fbiriyani.mp3?alt=media\u0026token=ccd45852-c05f-4ee3-af51-0c004ec083c8</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fchapathi.mp3?alt=media\u0026token=087041f3-7664-4b05-a116-49406b9f6263</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fchicken_curry.mp3?alt=media\u0026token=1be3046c-c755-44af-8b6f-d313e7829e04</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fcurd_rice.mp3?alt=media\u0026token=4cef53e5-a561-4c20-bbbe-fc65c30d1de9</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fegg_rice.mp3?alt=media\u0026token=0d52c5b8-c8cf-4c50-bdcf-26b246c18fb8</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Ffish_fried_rice.mp3?alt=media\u0026token=82a15597-17b3-43b7-9add-a800f358203a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fkebab.mp3?alt=media\u0026token=c6cf0b5e-1fde-4d34-8027-4e63e9f7742f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fmushroom_biryani.mp3?alt=media\u0026token=b65e8868-fb89-4811-b210-ea72be645dcf</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fmutton_biryani.mp3?alt=media\u0026token=6647732f-2cb4-4f25-81da-aa17163dd71a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fpaneer.mp3?alt=media\u0026token=c6698ffe-3b59-4f6f-a3bc-598a1b55dc2a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fpapad.mp3?alt=media\u0026token=269b6111-c922-45ef-8c5f-94277f2aaf7a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fparatha.mp3?alt=media\u0026token=2fede438-6b9d-4bf9-860c-9df695456a9a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fpayesha.mp3?alt=media\u0026token=9c0677f2-fd1e-4d93-b829-11affc8e8066</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Frice.mp3?alt=media\u0026token=a6543ad5-e18b-4ceb-acdf-09ffb0bd7bb8</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Froti.mp3?alt=media\u0026token=78a4e04b-73b5-4478-8e14-2cf29ff3076f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fsambar.mp3?alt=media\u0026token=dd778292-267d-451c-aaea-0e0455f227f7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fveg_curry.mp3?alt=media\u0026token=0c766e92-4688-4623-87b9-c613c516009d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FDinner%2FAudio%2Fveg_pulov.mp3?alt=media\u0026token=080450f2-844b-4eb4-9e25-c23057cf0cb6</item>
+    </string-array>
+
+    <string-array name="food_audio">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FAudio%2Fbreakfast.mp3?alt=media\u0026token=ce9a6571-8539-4c64-ac3f-285085343dfe</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FAudio%2Flunch.mp3?alt=media\u0026token=89857841-acb8-478d-9663-2ce05d50749f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FAudio%2Fsnack.mp3?alt=media\u0026token=22dd3f08-19b5-467b-b922-15c713803e9d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FAudio%2Fdinner.mp3?alt=media\u0026token=f205185a-426a-435d-9c6f-8f89106ec36a</item>
+    </string-array>
+
+    //All Audio files
+    <string-array name="all_shapes">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle.mp3?alt=media\u0026token=d922c5e4-a2c9-459d-99de-40a3de71089e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FStar%2Fstar.mp3?alt=media\u0026token=fd3f794e-57bc-4d0c-ba53-b6231f065358</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FSquare%2Fsquare.mp3?alt=media\u0026token=fb59bb1e-0eb5-409c-b94f-b7ac331a1dd6</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FTriangle%2Ftriangle.mp3?alt=media\u0026token=c35ca5ad-986c-4d47-8686-5463c00edd62</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCross%2Fcross.mp3?alt=media\u0026token=15366058-a8d9-4841-9547-f18c7b453eeb</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCross%2Fcross.mp3?alt=media\u0026token=15366058-a8d9-4841-9547-f18c7b453eeb</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FRhombus%2Frhombus.mp3?alt=media\u0026token=f6dce8e5-2456-4779-ad5c-b78dce1e135a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FTrapezium%2Ftrapezium.mp3?alt=media\u0026token=cd142772-635f-45d0-983f-a9f43d573110</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FOval%2Foval.mp3?alt=media\u0026token=3ec6af78-1f65-4114-bd8a-e13c1ff99ede</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FPentagon%2Fpentagon.mp3?alt=media\u0026token=e98addfd-b7c0-4511-b7c4-5f735772ae21</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FRectangle%2Frectangle.mp3?alt=media\u0026token=9d43ac86-1a9c-4b2a-8ef6-549ab6f3f190</item>
+    </string-array>
+
+    <string-array name="circle_shape">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle1.mp3?alt=media\u0026token=6699607f-e414-48cd-9be7-02ef171e6143</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle2.mp3?alt=media\u0026token=90f1be93-80cf-442d-b981-af70320d3711</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle3.mp3?alt=media\u0026token=89c91236-e881-4251-a1cc-a57d9d513efc</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle4.mp3?alt=media\u0026token=779de420-d254-4800-87db-340983cdbf4f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle5.mp3?alt=media\u0026token=af584165-49d9-4d71-b0d8-50c9586e0870</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle6.mp3?alt=media\u0026token=d099d6be-c749-468b-8ff8-0826c86fe1df</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle7.mp3?alt=media\u0026token=b1d786cc-cc62-42a5-ba59-54767e898f90</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle8.mp3?alt=media\u0026token=89d6946b-5d9d-4b9e-a720-d07341e23757</item>
+    </string-array>
+
+    <string-array name="star_shape">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FStar%2Fstar1.mp3?alt=media\u0026token=7f531bd3-30e7-4f9d-8bc6-61fcefbe38d9</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FStar%2Fstar2.mp3?alt=media\u0026token=b3679d33-d4bd-429e-a39f-97371914c126</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle8.mp3?alt=media\u0026token=89d6946b-5d9d-4b9e-a720-d07341e23757</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FStar%2Fstar4.mp3?alt=media\u0026token=7f23c5c9-ca1e-4efa-84be-e7387ab1e30a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FStar%2Fstar5.mp3?alt=media\u0026token=ab2e9f27-d91f-441a-a1af-a3315139c703</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle6.mp3?alt=media\u0026token=d099d6be-c749-468b-8ff8-0826c86fe1df</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FStar%2Fstar7.mp3?alt=media\u0026token=9657b574-a325-41b1-b18e-21dc9c3e9bef</item>
+    </string-array>
+
+    <string-array name="square_shape">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FSquare%2Fsquare1.mp3?alt=media\u0026token=df750911-9ea9-4300-adbc-2930f9219bc0</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle6.mp3?alt=media\u0026token=d099d6be-c749-468b-8ff8-0826c86fe1df</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle8.mp3?alt=media\u0026token=89d6946b-5d9d-4b9e-a720-d07341e23757</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FSquare%2Fsquare4.mp3?alt=media\u0026token=87bf4d3e-d629-4dea-b56a-f94cbd7d3e16</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FStar%2Fstar5.mp3?alt=media\u0026token=ab2e9f27-d91f-441a-a1af-a3315139c703</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FSquare%2Fsquare6.mp3?alt=media\u0026token=6e4e9303-0a94-4434-bfd4-0b07f2198ce6</item>
+    </string-array>
+
+    <string-array name="triangle_shape">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FTriangle%2Ftriangle1.mp3?alt=media\u0026token=287478dd-ce7b-4b2b-b38c-db4dfa5d0d0e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FTriangle%2Ftriangle2.mp3?alt=media\u0026token=6d5ce225-3b34-4b96-ad97-b4554f2131a8</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle6.mp3?alt=media\u0026token=d099d6be-c749-468b-8ff8-0826c86fe1df</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FTriangle%2Ftriangle4.mp3?alt=media\u0026token=67d7f498-0508-4492-bf98-3a8eebe10fc4</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FTriangle%2Ftriangle5.mp3?alt=media\u0026token=5cd4c74a-f604-4653-ab0f-a98c988d3c8f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle8.mp3?alt=media\u0026token=89d6946b-5d9d-4b9e-a720-d07341e23757</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FTriangle%2Ftriangle7.mp3?alt=media\u0026token=d297e0ae-97f2-4638-935b-15634eddd27b</item>
+    </string-array>
+
+    <string-array name="cross_shape">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCross%2Fcross1.mp3?alt=media\u0026token=15a68c29-5c33-43de-a63f-9b486a59b81e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle6.mp3?alt=media\u0026token=d099d6be-c749-468b-8ff8-0826c86fe1df</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle8.mp3?alt=media\u0026token=89d6946b-5d9d-4b9e-a720-d07341e23757</item>
+    </string-array>
+
+    <string-array name="arrow_shape">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle6.mp3?alt=media\u0026token=d099d6be-c749-468b-8ff8-0826c86fe1df</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FStar%2Fstar5.mp3?alt=media\u0026token=ab2e9f27-d91f-441a-a1af-a3315139c703</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle8.mp3?alt=media\u0026token=89d6946b-5d9d-4b9e-a720-d07341e23757</item>
+    </string-array>
+
+    <string-array name="rhombus_shape">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FRhombus%2Frhombus1.mp3?alt=media\u0026token=5b591db6-8431-4c92-8530-c011ddf5dbb0</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle6.mp3?alt=media\u0026token=d099d6be-c749-468b-8ff8-0826c86fe1df</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FStar%2Fstar5.mp3?alt=media\u0026token=ab2e9f27-d91f-441a-a1af-a3315139c703</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FRhombus%2Frhombus4.mp3?alt=media\u0026token=2fd747c7-683a-41d0-95d7-ae63d14b9027</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle8.mp3?alt=media\u0026token=89d6946b-5d9d-4b9e-a720-d07341e23757</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FRhombus%2Frhombus6.mp3?alt=media\u0026token=957a5c5f-b9fe-4e8a-b75d-64bab8809399</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FRhombus%2Frhombus7.mp3?alt=media\u0026token=355943bd-5827-4bc8-9eb5-e379274ecbf9</item>
+    </string-array>
+
+    <string-array name="trapezium_shape">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FTrapezium%2Ftrapezium1.mp3?alt=media\u0026token=f7d4bfa7-21ea-4a31-9cd3-207e5ae6ffc6</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle6.mp3?alt=media\u0026token=d099d6be-c749-468b-8ff8-0826c86fe1df</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FTrapezium%2Ftrapezium3.mp3?alt=media\u0026token=122bacb8-5797-44a5-b43c-5997b6cabc19</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FStar%2Fstar5.mp3?alt=media\u0026token=ab2e9f27-d91f-441a-a1af-a3315139c703</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FTrapezium%2Ftrapezium5.mp3?alt=media\u0026token=abb24d3a-b490-4485-a40f-2910d5075ac1</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle8.mp3?alt=media\u0026token=89d6946b-5d9d-4b9e-a720-d07341e23757</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FTrapezium%2Ftrapezium7.mp3?alt=media\u0026token=a2addbb8-cc86-4b2b-8f65-b22a55adc9b6</item>
+    </string-array>
+
+    <string-array name="oval_shape">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FOval%2Foval1.mp3?alt=media\u0026token=f737f76d-6c47-4231-a882-a4e2f5f2c230</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle6.mp3?alt=media\u0026token=d099d6be-c749-468b-8ff8-0826c86fe1df</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle8.mp3?alt=media\u0026token=89d6946b-5d9d-4b9e-a720-d07341e23757</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FOval%2Foval4.mp3?alt=media\u0026token=a7d5b9bb-4c8f-485e-85e7-89c25e2e48fa</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FStar%2Fstar5.mp3?alt=media\u0026token=ab2e9f27-d91f-441a-a1af-a3315139c703</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FTriangle%2Ftriangle2.mp3?alt=media\u0026token=6d5ce225-3b34-4b96-ad97-b4554f2131a8</item>
+    </string-array>
+
+    <string-array name="pentagon_shape">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FPentagon%2Fpentagon1.mp3?alt=media\u0026token=7d49546e-9f96-4391-a637-75d9881d17b6</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle6.mp3?alt=media\u0026token=d099d6be-c749-468b-8ff8-0826c86fe1df</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle8.mp3?alt=media\u0026token=89d6946b-5d9d-4b9e-a720-d07341e23757</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FPentagon%2Fpentagon4.mp3?alt=media\u0026token=39cafac0-fe13-4908-b665-abfc88e663b7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FStar%2Fstar5.mp3?alt=media\u0026token=ab2e9f27-d91f-441a-a1af-a3315139c703</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FPentagon%2Fpentagon6.mp3?alt=media\u0026token=cb3491f7-6f50-4bb2-8f5f-a60fe479a18e</item>
+    </string-array>
+
+    <string-array name="rectangle_shape">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FRectangle%2Frectangle1.mp3?alt=media\u0026token=320f4282-d0ee-48a3-9888-0ab861c79875</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle6.mp3?alt=media\u0026token=d099d6be-c749-468b-8ff8-0826c86fe1df</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FCircle%2Fcircle8.mp3?alt=media\u0026token=89d6946b-5d9d-4b9e-a720-d07341e23757</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FRectangle%2Frectangle4.mp3?alt=media\u0026token=963be22e-4561-4eea-a28b-cc285e0139cf</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FRectangle%2Frectangle5.mp3?alt=media\u0026token=542a6bf2-36df-4976-8506-58c0e5e18c15</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Shapes%2FRectangle%2Frectangle6.mp3?alt=media\u0026token=8a1788c9-5188-407a-af54-fbf32f6bfbac</item>
+    </string-array>
+
+    //Audio files of colors
+    <string-array name="black_color">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBlack%2Fblack1.mp3?alt=media\u0026token=3d28af0e-608a-4578-bfb3-90a16ed7fd0b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBlack%2Fblack2.mp3?alt=media\u0026token=1bf78abf-ea01-490a-821a-6e942479a932</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBlack%2Fblack3.mp3?alt=media\u0026token=eff4cb04-3732-4bef-8196-148201b2386b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBlack%2Fblack4.mp3?alt=media\u0026token=609e93e1-0294-4e60-b349-8a1e90522b26</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBlack%2Fblack5.mp3?alt=media\u0026token=82c387f7-eb24-4728-9685-f1662131901a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBlack%2Fblack6.mp3?alt=media\u0026token=eaa5cc67-54bd-4d51-9d0e-1242f15dc4af</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBlack%2Fblack7.mp3?alt=media\u0026token=bc2ca766-b1da-49e4-9850-207dbef3246f</item>
+    </string-array>
+
+    <string-array name="blue_color">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBlue%2Fblue1.mp3?alt=media\u0026token=1e324d03-b36d-44c9-87e0-411604dfa063</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBlue%2Fblue2.mp3?alt=media\u0026token=b503926d-46d4-498c-9680-30aa1d693f5b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBlue%2Fblue3.mp3?alt=media\u0026token=43edebf6-8e4b-4bd8-9246-057122f00520</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBlue%2Fblue4.mp3?alt=media\u0026token=2f5e085f-0500-4568-85f2-b3bb747bf17f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBlue%2Fblue5.mp3?alt=media\u0026token=999def4c-69cb-4484-80dc-1762178033b6</item>
+    </string-array>
+
+    <string-array name="brown_color">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBrown%2Fbrown1.mp3?alt=media\u0026token=2e314b86-f0a7-46af-9af6-73a7623e8649</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBrown%2Fbrown2.mp3?alt=media\u0026token=4eab06be-20ee-4bd0-8d27-d247609313db</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBrown%2Fbrown3.mp3?alt=media\u0026token=5c962397-0521-4710-bcff-fb85a900026e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBrown%2Fbrown4.mp3?alt=media\u0026token=9b77388f-cc3d-418a-bbc4-8cc4c1b6ddae</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FBrown%2Fbrown5.mp3?alt=media\u0026token=ac742a3e-62eb-4b04-92c1-7f0b716daebe</item>
+    </string-array>
+
+    <string-array name="green_color">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FGreen%2Fgreen1.mp3?alt=media\u0026token=9b95f35a-7e29-4218-bdec-454f4eaaa3fa</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FGreen%2Fgreen2.mp3?alt=media\u0026token=4fb60efb-b5d7-4a41-81a2-4a279070ac4b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FGreen%2Fgreen3.mp3?alt=media\u0026token=04f21099-5790-4ae6-8c74-c4c263a56456</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FGreen%2Fgreen4.mp3?alt=media\u0026token=4ce8f6a0-c180-4954-bd78-989e79053553</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FGreen%2Fgreen5.mp3?alt=media\u0026token=e25236de-2b36-4a43-b51f-c2033da3e468</item>
+    </string-array>
+
+    <string-array name="grey_color">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FGrey%2Fgrey1.mp3?alt=media\u0026token=fc4923f5-87de-4c40-b5b1-8dcf8c3e92f0</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FGrey%2Fgrey2.mp3?alt=media\u0026token=0cba8f5c-413b-4c5b-82d2-42cc6373c393</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FGrey%2Fgrey3.mp3?alt=media\u0026token=4a9d559b-b324-490b-9b62-c1463a1b7074</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FGrey%2Fgrey4.mp3?alt=media\u0026token=f137b65e-e0aa-40ec-a480-50d5d6add6b1</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FGrey%2Fgrey5.mp3?alt=media\u0026token=71c42078-c2e7-4f22-8a4c-c56e0430216c</item>
+    </string-array>
+
+    <string-array name="orange_color">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FOrange%2Forange1.mp3?alt=media\u0026token=18bd16d7-7eef-4a28-9540-5391bf8cd733</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FOrange%2Forange2.mp3?alt=media\u0026token=68f04fa8-5f1d-402c-8bbc-157bab07e7ed</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FOrange%2Forange3.mp3?alt=media\u0026token=088c50f8-c547-4329-9b0e-5de2b3bc5f3f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FOrange%2Forange4.mp3?alt=media\u0026token=f95c5f55-06e1-496e-86d1-e2f4c5aabb20</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FOrange%2Forange5.mp3?alt=media\u0026token=19cd3c69-1692-4270-8f21-19af94c699bf</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FOrange%2Forange6.mp3?alt=media\u0026token=60f49f81-4acd-4f8b-99af-b941bc8c69f4</item>
+    </string-array>
+
+    <string-array name="pink_color">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FPink%2Fpink1.mp3?alt=media\u0026token=94f62eb6-9af7-4b1d-83af-7cd92638f26a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FPink%2Fpink2.mp3?alt=media\u0026token=400a4d84-6340-49a9-8596-4e77bdd531aa</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FPink%2Fpink3.mp3?alt=media\u0026token=ba1499db-34e9-4445-a8e9-e6dd91a5841e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FPink%2Fpink4.mp3?alt=media\u0026token=19296510-cc91-4ed6-adba-16633aa1e685</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FPink%2Fpink5.mp3?alt=media\u0026token=997bc0e5-8904-4f6e-b624-37d819135d3c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FPink%2Fpink6.mp3?alt=media\u0026token=6c57d5e1-4194-49ab-b6a6-dd500dbfbf63</item>
+    </string-array>
+
+    <string-array name="purple_color">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FPurple%2Fpurple1.mp3?alt=media\u0026token=490e0221-f375-4537-9710-509bb18d9f5c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FPurple%2Fpurple2.mp3?alt=media\u0026token=473002fb-7ab7-4954-b66e-ceddf00892af</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FPurple%2Fpurple3.mp3?alt=media\u0026token=bbb3a97c-1918-4cef-9905-2a99e674727c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FPurple%2Fpurple4.mp3?alt=media\u0026token=8ec899f4-bc45-4589-af3d-8ee3586c402c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FPurple%2Fpurple5.mp3?alt=media\u0026token=0ce56807-d581-4ac8-a506-f20313b595ab</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FPurple%2Fpurple6.mp3?alt=media\u0026token=3b5d9a97-237c-41c8-b9d4-e64eddbdf28c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FPurple%2Fpurple7.mp3?alt=media\u0026token=97c1792b-3e39-4521-9d9b-915fd388c241</item>
+    </string-array>
+
+    <string-array name="red_color">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FRed%2Fred1.mp3?alt=media\u0026token=2275f145-ded1-4346-9c41-1f827abc9aed</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FRed%2Fred2.mp3?alt=media\u0026token=3f0fc309-b02c-48ba-ba45-34c71046a0eb</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FRed%2Fred3.mp3?alt=media\u0026token=49f8af93-2a5f-4a51-8f2d-85fd6636a024</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FRed%2Fred4.mp3?alt=media\u0026token=63e71058-af05-4b6d-8099-971cbcde7723</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FRed%2Fred5.mp3?alt=media\u0026token=538b6d23-5e96-4f2f-9434-0119e0510e0d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FRed%2Fred6.mp3?alt=media\u0026token=c80c807d-b693-46cc-bad2-a2445f4a4ff5</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FRed%2Fred7.mp3?alt=media\u0026token=cdbe04de-f6b6-4284-8fff-6c3c287b1fff</item>
+    </string-array>
+
+    <string-array name="white_color">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FWhite%2Fwhite1.mp3?alt=media\u0026token=2315df48-a868-4728-b1d2-3d566d2f7cff</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FWhite%2Fwhite2.mp3?alt=media\u0026token=623fc888-8b5c-4963-b887-01b88fa40b48</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FWhite%2Fwhite3.mp3?alt=media\u0026token=61cd0b6a-13f4-43e9-8c3a-6d675c534603</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FWhite%2Fwhite4.mp3?alt=media\u0026token=21380d25-6f7f-4ce2-9477-baa6b4e5e342</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FWhite%2Fwhite5.mp3?alt=media\u0026token=2c6b6b08-1561-4ac1-b0cd-07152e2bc4a3</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FWhite%2Fwhite6.mp3?alt=media\u0026token=f1d13e93-3c0e-4cf1-9aa8-8a1be219316e</item>
+    </string-array>
+
+    <string-array name="yellow_color">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FYellow%2Fyellow1.mp3?alt=media\u0026token=ecab8d4a-7dcd-41e0-92ef-dc3b8ac3ed12</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FYellow%2Fyellow2.mp3?alt=media\u0026token=e0785f68-8ebf-4002-9c91-b6f6bdb996df</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FYellow%2Fyellow3.mp3?alt=media\u0026token=5e4825c1-d391-467b-80c6-933f8822fb4e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FYellow%2Fyellow4.mp3?alt=media\u0026token=d40849aa-2d33-44eb-ba54-addfd52571bd</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Audio%20Colors%2FYellow%2Fyellow5.mp3?alt=media\u0026token=b80c1daa-97e0-4a01-a0a1-191d86e7c07b</item>
+    </string-array>
+
+    <string-array name="bgm">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/BG%20Music%2FPayday.mp3?alt=media\u0026token=4355dfc3-22a1-464a-b063-68a4d6295f14</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/BG%20Music%2FBike%20Rides%20-%20The%20Green%20Orbs.mp3?alt=media\u0026token=794e3b09-4a96-4d29-8136-1becfb0767f9</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/BG%20Music%2FSomeone%20Your%20Own%20Size%20-%20RW%20Smith%20(No%20Copyright%20Music).mp3?alt=media\u0026token=48242db4-a48c-483a-bf08-f5f64efb6b1d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/BG%20Music%2FStoker%20-%20Jingle%20Punks%20(No%20Copyright%20Music).mp3?alt=media\u0026token=c4a8570d-98cf-4b2f-8de8-fa552cd004a0</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/BG%20Music%2FThe%20Only%20Girl%20-%20Silent%20Partner%20-%20YouTube%20Audio%20Library.mp3?alt=media\u0026token=1bf34be0-e36f-4640-9786-2124fc7e39c8</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/BG%20Music%2FUp%20Above%20-%20Letter%20Box.mp3?alt=media\u0026token=fec6bee0-1b85-4c11-8369-89d4ae152963</item>
+    </string-array>
+
+    <string-array name="musical_instruments">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FImages%2Fpiano.png?alt=media\u0026token=f37ff98d-9002-4414-ab69-4400f7ca3f50</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FImages%2Fdrums.png?alt=media\u0026token=decfeffd-5bba-4691-9648-3259045b3906</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FImages%2Fguitar.png?alt=media\u0026token=bd8585f0-7472-4e74-8c25-b058a7d049ce</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FImages%2Fviolin.png?alt=media\u0026token=4d6706dd-ed61-474e-9cff-f1c8821d0083</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FImages%2Fbells.png?alt=media\u0026token=144e09ba-2530-46b4-b043-8ad545ac8788</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FImages%2Ftrumpet.png?alt=media\u0026token=98aaefa1-c457-404d-b981-1277a1575ba8</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FImages%2Fflute.png?alt=media\u0026token=9cfa5b53-1d5d-43af-b10f-fc3a0ff63307</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FImages%2Ftabala.png?alt=media\u0026token=74212612-7b72-42f3-963a-10bdbf3f4cc2</item>
+    </string-array>
+
+    <string-array name="musical_instruments_audio">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla–47f1f.appspot.com/o/Musical%20Instruments%2FAudio%2Fpiano.mp3?alt=media\u0026token=23af7b11–2189-4cfa-8d29-84e5585dcebe</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FAudio%2FDrum.mp3?alt=media\u0026token=cea6e94f-2c5b-440a-9b59-35bbd5bb805c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FAudio%2Fguitar.mp3?alt=media\u0026token=12b719c5-be8e-40b7-b250-6068036616f2</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FAudio%2Fviolin.mp3?alt=media\u0026token=61f9024e-98a4-4fd4-9655-28e601edfa73</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FAudio%2Fbells.mp3?alt=media\u0026token=6ca331a5-e2a3-445d-8121-25a37b43b060</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FAudio%2Ftrumpet.mp3?alt=media\u0026token=117d9b7e-29ec-4430-b489-983062ef8c12</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FAudio%2Fflute.mp3?alt=media\u0026token=a1a2471c-1b8f-499f-8b75-6e68c56777b9</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Musical%20Instruments%2FAudio%2Ftabla.mp3?alt=media\u0026token=4d50b5c7-be11-42f2-9a9d-edd049076018</item>
+    </string-array>
+
+    <string-array name="musical_instruments_gif">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FMusical%20Instruments%2Fpiano_gif.gif?alt=media\u0026token=9774602b-390c-4c1c-8826-60876c14b477</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FMusical%20Instruments%2Fdrums_gif.gif?alt=media\u0026token=106e86ab-af00-460d-95c1-19c986ace432</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FMusical%20Instruments%2Fguitar_gif.gif?alt=media\u0026token=9a300c2d-6501-494a-8b20-e8ba1eed2644</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FMusical%20Instruments%2Fviolin_gif.gif?alt=media\u0026token=9c7c9fc0-9bf1-4ff9-aa3c-4f6c68159788</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FMusical%20Instruments%2Fbells_gif.gif?alt=media\u0026token=900d8dd7-6289-4fb9-aff1-a3cf06c870eb</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FMusical%20Instruments%2Ftrumpet_gif.gif?alt=media\u0026token=becbf7d3-bc0d-46db-8dd8-d31da1ff7c45</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FMusical%20Instruments%2Fflute_gif.gif?alt=media\u0026token=82fb820a-09e9-414e-95ee-33330041ccc7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FMusical%20Instruments%2Ftabla_gif.gif?alt=media\u0026token=f8017e63-c716-45d1-a73d-4b416e0801de</item>
+    </string-array>
+
+    <string-array name="vehicles">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Vehicles%2Fcar.png?alt=media\u0026token=e57cf114-d87f-4554-b9a9-28f9e25f2d2f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Vehicles%2Ftruck.png?alt=media\u0026token=9fe72a76-d175-4d55-9ad3-24f0593ea8d7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Vehicles%2Ftrain.png?alt=media\u0026token=bc2e4668-1d69-46d2-b555-2cc551df286e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Vehicles%2Fracing_car.png?alt=media\u0026token=3463d863-60bc-49d6-b81f-1a4bec801ea5</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Vehicles%2Fambulence.png?alt=media\u0026token=0906e0e3-274e-440b-a642-4fec551eddd8</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Vehicles%2Ffire_engine.png?alt=media\u0026token=6a8b805c-75ad-4b8f-bc24-b975ea46b68b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Vehicles%2Fauto.png?alt=media\u0026token=06817b58-c88b-446f-9351-c754d914b56d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Vehicles%2Faeroplane.png?alt=media\u0026token=e70e278f-e7df-4a88-9d8e-a3908868d5a7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Vehicles%2Fpolice_car.png?alt=media\u0026token=6c827dcc-8d6a-4eba-8843-294f01d776f7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Vehicles%2Fship.png?alt=media\u0026token=86999e2c-8fdc-4570-8845-1804b4e70c4d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Vehicles%2Fhelicopter.png?alt=media\u0026token=46555984-1293-441b-8d5a-d8f5e9b9b745</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Vehicles%2Fjet.png?alt=media\u0026token=324a930a-d2a8-40fa-89e2-0e277f4e02a8</item>
+    </string-array>
+
+    <string-array name="vehicles_gif">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FVehicles%2Fcar1_gif.gif?alt=media\u0026token=291180ef-d564-4276-9cb1-ae4dea9a9fca</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FVehicles%2Ftruck_gif.gif?alt=media\u0026token=76ec4478-d4a6-48ec-affa-b82fc7b55a99</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FVehicles%2Ftrain_gif.gif?alt=media\u0026token=cff1398e-f020-4e4d-b83a-e2051050eb71</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FVehicles%2Fracing_car2_gif.gif?alt=media\u0026token=45ca6cd4-3d45-44df-9487-846270c56041</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FVehicles%2Fambulance2_gif.gif?alt=media\u0026token=acfa8eff-c5e9-4caf-ab6e-13f4bec1c27d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FVehicles%2Ffire_engine_gif.gif?alt=media\u0026token=5d68c052-7f8f-414f-b738-53003a68da71</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FVehicles%2Fauto_gif.gif?alt=media\u0026token=508dfb3e-783f-4b30-b4b0-f2accd87925e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FVehicles%2Faeroplane2_gif.gif?alt=media\u0026token=bb3cc44b-09d9-42fc-b908-81518013220f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FVehicles%2Fpolice_car_gif.gif?alt=media\u0026token=512b2970-5c01-4095-98b5-0de465f0a37f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FVehicles%2Fship_gif.gif?alt=media\u0026token=bea456a3-1968-4d2b-aadf-31a66e302568</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FVehicles%2Fhelicopter_gif.gif?alt=media\u0026token=d200eaf0-13c4-4232-a65d-3266edab90f4</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FVehicles%2Ffighter_aircraft_gif.gif?alt=media\u0026token=a9daa15d-0e71-4e32-9857-423e209f8451</item>
+    </string-array>
+
+    <string-array name="animals">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animals%2Fcat.png?alt=media\u0026token=a816e3a7-e466-432a-b902-b01d2119b5fd</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animals%2Fdog.png?alt=media\u0026token=53a4f7c7-033e-4906-96f4-aa431bba9b9b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animals%2Fcow.png?alt=media\u0026token=ade616e5-1df1-4007-b96d-5cc1995e059d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animals%2Fhorse.png?alt=media\u0026token=7c9bca6f-3f27-42a6-9525-be968fcf35f7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animals%2Felephant.png?alt=media\u0026token=31007aac-3c36-464f-bfcd-c9ab6e0ff305</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animals%2Fpig.png?alt=media\u0026token=a29171f6-45c6-40a0-8a7c-47400a0241d3</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animals%2Flion.png?alt=media\u0026token=45c2a555-8b04-4a18-b31a-3345eca4eaa1</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animals%2Ftiger.png?alt=media\u0026token=bab52304-592e-4206-90c6-a235091f493d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animals%2Fmonkey.png?alt=media\u0026token=f53b0462-b8c2-4a5b-ad92-8fde1a181833</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animals%2Fbear.png?alt=media\u0026token=222d014b-3e54-4bc0-a2e3-44a017f9bed7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animals%2Fdonkey.png?alt=media\u0026token=85ea53ce-66f1-405b-a655-347b418b98a9</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animals%2Fsheep.png?alt=media\u0026token=f385c417-b04f-4308-a923-58bd0ee86ac6</item>
+    </string-array>
+
+    <string-array name="animals_gif">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FAnimals%2Fcat_gif.gif?alt=media\u0026token=e6af3fca-d5f4-4d21-b7ac-f15fce1499f2</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FAnimals%2Fdog_gif.png?alt=media\u0026token=14e77b82-6a46-4ed1-b469-aa2f0521b3ec</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FAnimals%2Fcow_gif.gif?alt=media\u0026token=e6353b52-37e2-44a6-b8a5-4bc52a23f2a9</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FAnimals%2Fhorse_gif.gif?alt=media\u0026token=dcde723f-8690-4ab6-bbfa-a204239de2f7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FAnimals%2Felephant_gif.gif?alt=media\u0026token=50682578-966a-4569-bb65-13e2775be730</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FAnimals%2Fpig_gif.gif?alt=media\u0026token=c91f5b3e-087f-4c5c-bbc6-ee568bde1faa</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FAnimals%2Flion_gif.gif?alt=media\u0026token=28d1901a-674b-443b-aa55-6b5eb8812160</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FAnimals%2Ftiger_gif.gif?alt=media\u0026token=e90a9fe2-c09f-4787-a34e-36ce3868865a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FAnimals%2Fmonkey_gif.gif?alt=media\u0026token=ff205bb5-2954-409c-817f-868e1d66cacd</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FAnimals%2Fbear_gif.gif?alt=media\u0026token=73f97c1e-a6ed-499f-84aa-d986fb361d3b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FAnimals%2Fdonkey_gif.gif?alt=media\u0026token=84db435c-bd3c-4011-896e-9fa692713725</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FAnimals%2Fsheep_gif.gif?alt=media\u0026token=bb8897eb-f2eb-4aa6-8749-f34b2a270d1d</item>
+    </string-array>
+
+    <string-array name="birds">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Birds%2Fparrot.png?alt=media\u0026token=527efcec-658a-40da-a65c-1e940aef4c75</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Birds%2Fcrow.png?alt=media\u0026token=33647c38-5ad3-4095-9baa-b785f27830e9</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Birds%2Fpigeon.png?alt=media\u0026token=e7485a85-b6eb-4c40-870e-68f834961eda</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Birds%2Fduck.png?alt=media\u0026token=52a1f06f-57dc-4e22-84d7-e7b956633ecd</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Birds%2Fhen.png?alt=media\u0026token=d1097665-a10c-46d8-a5ed-e3e98ccb0125</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Birds%2Fpeacock.png?alt=media\u0026token=5ec9f156-2eb3-477a-95cb-4bee7a60d28f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Birds%2Fowl.png?alt=media\u0026token=cac0ceac-6dae-4831-8c82-1a84bfe21f59</item>
+    </string-array>
+
+    <string-array name="birds_gif">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FBirds%2Fparrot_gif.gif?alt=media\u0026token=bb5ded55-afb8-4b49-9e3c-2e9678678806</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FBirds%2Fcrow_gif.gif?alt=media\u0026token=304d9a06-cd49-4657-8c71-ec6f1b391a60</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FBirds%2Fpigeon_gif.gif?alt=media\u0026token=2bc3b540-8e5f-483c-8b03-838c6fab2125</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FBirds%2Fduck_gif.gif?alt=media\u0026token=1e30d447-fdbf-4a3a-a15b-89c39f6e94ed</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FBirds%2Fhen_gif.gif?alt=media\u0026token=a7d9650b-25ad-47e6-b7e2-cd354717ae3d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FBirds%2Fpeacock_gif.gif?alt=media\u0026token=9b17edc3-e4f5-4586-9f0a-a7891e554111</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Animated%20Gifs%2FBirds%2Fowl_gif.gif?alt=media\u0026token=e3073ee8-9e8e-4591-bb98-6a5a9f48c0f4</item>
+    </string-array>
+
+    <string-array name="lt_sizes">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FSizes%2Fapple1.png?alt=media\u0026token=ba711f49-5d0c-4780-b55f-30be5c1d0b90</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FSizes%2Fapple2.png?alt=media\u0026token=91b79f79-29e5-48fb-b773-ac9685687f61</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FSizes%2Fball2.png?alt=media\u0026token=73dedf12-ccc5-4ebb-bdb0-c36503d16e8d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FSizes%2Fball1.png?alt=media\u0026token=960fedad-bff6-427a-a606-9bc06edc6324</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FSizes%2Fbicycle2.png?alt=media\u0026token=176f5626-c76d-4293-a42e-605fda0ba866</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FSizes%2Fbicycle1.png?alt=media\u0026token=ff372741-5a0e-46c8-b3ba-1070a5a7645f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FSizes%2Felephant1.png?alt=media\u0026token=1968af09-97a1-4d0e-b720-d5f2ef1187d4</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FSizes%2Felephant2.png?alt=media\u0026token=c96c7952-da3d-490c-b2b5-18464668e3b8</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FSizes%2Ffish1.png?alt=media\u0026token=72a61955-ad42-4674-9537-5ed5e4dacc26</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FSizes%2Ffish2.png?alt=media\u0026token=d857f3bc-c45a-4803-b34d-ab18808a4744</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FSizes%2Flamp2.png?alt=media\u0026token=dd88fdac-5123-4f16-8e3b-072a51ef4746</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FSizes%2Flamp1.png?alt=media\u0026token=fa4eb9c8-40ff-4043-a3ed-029f76f0eb33</item>
+    </string-array>
+
+    <string-array name="tall_short">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FTall%20vs%20Short%2Fanimal1.png?alt=media\u0026token=e6411e29-3750-4d52-8e0b-0e3fb2eb7a8e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FTall%20vs%20Short%2Fanimal2.png?alt=media\u0026token=dfbef323-c4f8-43ea-b407-4497b084f3fe</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FTall%20vs%20Short%2Fbird2.png?alt=media\u0026token=0ed58d96-6ca4-44a9-b03c-8e1c67a514b2</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FTall%20vs%20Short%2Fbird1.png?alt=media\u0026token=fe1ffef3-2000-47a7-92a4-b266fc528c61</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FTall%20vs%20Short%2Fbucket2.png?alt=media\u0026token=b58dbc09-c899-4ff9-91ae-b99c9ec2c29c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FTall%20vs%20Short%2Fbucket1.png?alt=media\u0026token=bd30f46a-4ffe-4dcd-b027-03e1b510e09f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FTall%20vs%20Short%2Fbuilding1.png?alt=media\u0026token=f36422f1-cca2-4732-8a34-df731e48b1e1</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FTall%20vs%20Short%2Fbuilding2.png?alt=media\u0026token=03289ff4-8e54-4d5f-8123-d282e4f111e9</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FTall%20vs%20Short%2Fhuman1.png?alt=media\u0026token=8dfc3480-8e11-4f3e-9dd6-d51d90c1564c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FTall%20vs%20Short%2Fhuman2.png?alt=media\u0026token=8f10e883-589e-483b-977b-365f8ab2428d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FTall%20vs%20Short%2Ftree2.png?alt=media\u0026token=b3b9e448-f2af-46cb-906a-2453c95df76a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FTall%20vs%20Short%2Ftree1.png?alt=media\u0026token=6b156c45-6809-446f-a58f-831ba9cacf2c</item>
+    </string-array>
+
+    <string-array name="numbers">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FNumbers%2Fapple.png?alt=media\u0026token=55893469-70e2-4c4a-9d2a-f19fc8c9edf9</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FNumbers%2Fboots.png?alt=media\u0026token=c848f3cb-bfab-40ef-8946-075fce51df1b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FNumbers%2Fmango.png?alt=media\u0026token=6989ea61-545b-43ae-a430-9fd964a242c4</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FNumbers%2Fhat.png?alt=media\u0026token=1ed1bea0-da26-438a-88bb-06225a3b67b9</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FNumbers%2Fgloves.png?alt=media\u0026token=bd0b76b2-6522-4b42-b356-81b08f8399a1</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FNumbers%2Fball.png?alt=media\u0026token=d4b567de-c1dc-47c5-b551-e0b078e7cc1d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FNumbers%2Fcats.png?alt=media\u0026token=acc6bc9e-0b97-4745-a1ff-f3e5b926b9af</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FNumbers%2Fbirds.png?alt=media\u0026token=5a0dcfe6-684f-4c6c-a749-5304cb2e22cf</item>
+    </string-array>
+
+    <string-array name="few_more">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FFew%20vs%20More%2Fimage1.png?alt=media\u0026token=b02cf8a3-ab85-4bb8-b5e4-eafc310d1c7a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FFew%20vs%20More%2Fimage2.png?alt=media\u0026token=2aaf9b59-ee3a-4223-9f1d-40d0ec588784</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FFew%20vs%20More%2Fimage3.png?alt=media\u0026token=94f20845-91a1-4bff-be26-36f7d1feeefc</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FFew%20vs%20More%2Fimage4.png?alt=media\u0026token=8654cdef-5c9f-42e1-b30a-c92d16c9a2fc</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FFew%20vs%20More%2Fimage5.png?alt=media\u0026token=db4c8870-670f-4236-8f39-0fb3ad94330e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FFew%20vs%20More%2Fimage6.png?alt=media\u0026token=8bd3324d-814c-47e9-b27c-d2fe60108c2f</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FFew%20vs%20More%2Fimage7.png?alt=media\u0026token=07ebcdb5-5984-4ecb-b947-b9c790916337</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FFew%20vs%20More%2Fimage7.png?alt=media\u0026token=07ebcdb5-5984-4ecb-b947-b9c790916337</item>
+    </string-array>
+
+    <string-array name="opposites">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FOpposites%2Fimage1.png?alt=media\u0026token=2ae52996-c30a-4ab6-a110-75a4653e72be</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FOpposites%2Fimage2.png?alt=media\u0026token=33d84637-cd22-4215-b199-d7e7d7676de9</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FOpposites%2Fimage3.png?alt=media\u0026token=ff9b9fb5-effc-4080-b07f-053708130df7</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FOpposites%2Fimage4.png?alt=media\u0026token=8a566a48-d86e-4d23-90d1-11df1dd04426</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FOpposites%2Fimage5.png?alt=media\u0026token=1775152e-003d-4e9d-98e7-5bd66340fd10</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FOpposites%2Fimage6.jpg?alt=media\u0026token=3add8394-c0d3-498b-ae89-d5d78c010d99</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FOpposites%2Fimage7.png?alt=media\u0026token=bd17f94f-ef80-45a9-801c-653de3d6e584</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FOpposites%2Fimage8.png?alt=media\u0026token=accc8640-02bf-452f-9d91-efbc84fe852d</item>
+    </string-array>
+
+    <string-array name="visual_discrimination">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Fbird1.png?alt=media\u0026token=564b76bd-5445-4485-9859-cb4c6129ef56</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Fbird2.png?alt=media\u0026token=e898fd22-78ca-4b4a-b9a0-5d311b3e4914</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Fcar1.png?alt=media\u0026token=c2bc644f-6c23-456e-b957-344b9a8e548b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Fcar2.png?alt=media\u0026token=4ded10f2-5b28-41b8-bb2a-aabbcf2d7790</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Fcat1.png?alt=media\u0026token=b8beee17-4c65-436f-8449-787c25f1f766</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Fcat2.png?alt=media\u0026token=4f9aeaca-6ca0-4be0-a0a6-8a838b3782c4</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Frose1.png?alt=media\u0026token=a90455e6-35f9-401d-bc12-5cacdf81616d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Frose2.png?alt=media\u0026token=72a2e061-0984-4493-a9ad-60a10c82a5ae</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Fbheem1.png?alt=media\u0026token=48e3b3a8-b55d-4c3e-8656-9f4161095054</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Fbheem2.png?alt=media\u0026token=b032a3e8-aabd-448c-9c3c-d96c554bfdbc</item>
+    </string-array>
+
+    <string-array name="visual_discrimination_result">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Fresult_bird.png?alt=media\u0026token=fad8220d-09de-4c8e-ac08-e64d67b10373</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Fresult_car.png?alt=media\u0026token=8725d2c5-10e8-40ca-81c0-0816bd4fc494</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Fresult_cat.png?alt=media\u0026token=871d68c6-6af6-4a2b-ba7d-71b24276a99e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Fresult_rose.png?alt=media\u0026token=3b4d2fe5-fa02-4d76-9396-5d7751d0be16</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FVisual%20Discrimination%2Fresult_bheem.png?alt=media\u0026token=de2b9b86-c017-461f-882f-2e38a2be5a26</item>
+    </string-array>
+
+    <string-array name="riddle1">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FRiddles%2Fcircle_1.png?alt=media\u0026token=9faa4632-b1f0-4a48-806b-67c992f80374</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FRiddles%2Fcircle_2.png?alt=media\u0026token=1d7db0fa-969b-4dc2-9812-0291cf471f08</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FRiddles%2Fcircle_3.png?alt=media\u0026token=23b0b29f-7549-42bd-a020-feebd97ef893</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FRiddles%2Fcircle_4.png?alt=media\u0026token=c1b9541b-20b4-4804-b322-d8714a55adc0</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FRiddles%2Fcircle_5.png?alt=media\u0026token=a2cd8e5e-03e0-4b5e-81a9-32ad7eb45189</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FRiddles%2Fcircle_6.png?alt=media\u0026token=6e0b4707-e78d-4c68-a62b-9bc58538ba84</item>
+    </string-array>
+
+    <string-array name="jigsaw_puzzles">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fanimal1.png?alt=media\u0026token=b6bbe35c-7cae-4aff-b209-0384126c83f1</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fanimal2.png?alt=media\u0026token=dd23f39a-5967-4658-8620-93e2b3b6e776</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fanimal3.png?alt=media\u0026token=7267e801-dd7b-4991-bd33-29ac88ec2e73</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fanimal4.png?alt=media\u0026token=c2cf9602-06a1-4643-ad29-b195db2f039a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fbird1.png?alt=media\u0026token=ca559ca4-52d3-438f-8ef5-790bf4141827</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fbird2.png?alt=media\u0026token=4191d6d8-5e6d-4381-a543-3ef18a5894db</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fbird3.png?alt=media\u0026token=b11f05af-c540-4329-8546-0250e04603fe</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fbird4.png?alt=media\u0026token=ad0ef638-1dd2-4154-a5eb-bc60532147ee</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fflower1.png?alt=media\u0026token=dffb83bb-0c38-4449-bf94-4b8ad93bbb4e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fflower2.png?alt=media\u0026token=128709a3-f5a1-4059-9790-c1cf2257e990</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fflower3.png?alt=media\u0026token=bf795099-8c4a-4497-ace3-7b93cc28cad5</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fflower4.png?alt=media\u0026token=13b1eba8-1fbc-4ca8-b52f-46282098e547</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Ffruit1.png?alt=media\u0026token=b609d058-c0c3-43fe-a228-7d756fe710a3</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Ffruit2.png?alt=media\u0026token=1341f708-a0a0-45df-9fcf-daa926625917</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Ffruit3.png?alt=media\u0026token=b0d15acf-a552-43d2-b7b4-5692d99120ea</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Ffruit4.png?alt=media\u0026token=b3d6f95a-b6af-48fc-9534-c7b5f9e1057a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fsea1.png?alt=media\u0026token=10059df0-c516-4c96-9700-9e2d7c7e10b3</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fsea2.png?alt=media\u0026token=2420561c-5cc2-46b8-bf1e-c6e52f73a128</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fsea3.png?alt=media\u0026token=6b1b574c-be95-4143-a7f8-a10880ff6f38</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fsea4.png?alt=media\u0026token=6e563e66-c025-4d26-833c-96e5e40be21a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fvegetable1.png?alt=media\u0026token=fa9a3216-6464-4fbb-ba10-0d677ae4709e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fvegetable2.png?alt=media\u0026token=5ffdc771-43d4-4818-ae96-df107732d1b1</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fvegetable3.png?alt=media\u0026token=4db9ecd6-0b40-48eb-a381-cef0c990681b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fvegetable4.png?alt=media\u0026token=f5437a3f-7b55-4b23-8126-c8cec2cd413b</item>
+    </string-array>
+
+    <string-array name="jigsaw_puzzle_bg">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fanimal_bg.jpg?alt=media\u0026token=52a03008-4d14-42f9-9497-bd0b5e0d08ac</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fbird_bg.png?alt=media\u0026token=4be0292b-0879-401e-bf40-dd4f7ec7aa19</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fflower_bg.png?alt=media\u0026token=9ce0f8f2-cc18-47c2-9bee-7b83b3391aa3</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Ffruit_bg.png?alt=media\u0026token=15c93714-552c-4842-88f6-28d1b21a6720</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fsea_bg.png?alt=media\u0026token=0f19a454-fef1-40db-bc61-268da4fce225</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fvegetable_bg.png?alt=media\u0026token=24c19158-bce0-420a-99a6-f03f5842971f</item>
+    </string-array>
+
+    <string-array name="jigsaw_puzzle_full">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fanimal.jpg?alt=media\u0026token=92e948c3-fdba-4a86-8ec0-cc28f631be4e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fbird.jpg?alt=media\u0026token=f1288f5d-d99e-4263-8184-b1e22740922e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fflower.jpg?alt=media\u0026token=1cd051c5-d26d-42a3-a3de-bd1157f5d8ca</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Ffruit.jpg?alt=media\u0026token=d1431c40-6832-4b47-b496-4becd2cc22ab</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fsea.jpg?alt=media\u0026token=bc40407e-df53-4063-8dce-f2759257858e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FJigsaw%20Puzzles%2Fvegetable.jpg?alt=media\u0026token=d106c1f1-6db2-4e20-8f19-a81f2158fcaf</item>
+    </string-array>
+
+    <string-array name="trophy">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FRiddles%2FTrophy%2Ffalling_papers_gif.gif?alt=media\u0026token=ebb0eff1-0c60-4eed-9851-05e3897dd607</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FRiddles%2FTrophy%2Ftrophy_gold.gif?alt=media\u0026token=d29b8d48-07c0-40c9-9104-13200fc014a2</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FRiddles%2FTrophy%2Ftrophy_silver.gif?alt=media\u0026token=addf0446-cc32-4b32-b3c8-dea13a94edf8</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FRiddles%2FTrophy%2Ftrophy_bronze.gif?alt=media\u0026token=e889a4e4-2b0e-43c1-935d-e2d719fa9c07</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FRiddles%2FTrophy%2Fbetter_luck.png?alt=media\u0026token=e504b558-4967-441e-84b6-fb846875ae59</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FRiddles%2FTrophy%2Fcongratulations.png?alt=media\u0026token=7eeebb42-f87c-4a6c-8637-20d782831409</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Logical%20Thinking%2FRiddles%2FTrophy%2Fpoints_banner.png?alt=media\u0026token=e1c9c8b5-bbb4-443a-9ef8-5a8b0dcc4623</item>
+    </string-array>
+
+    <string-array name="girls_dress_audio">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Girls%20Dress%2FAudio%2Fria.mp3?alt=media\u0026token=b38fc6fa-1547-485d-8800-b60951d7de27</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Girls%20Dress%2FAudio%2Ftina.mp3?alt=media\u0026token=b23f598c-a160-4236-adb8-529fe226f27c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Girls%20Dress%2FAudio%2Fsophie.mp3?alt=media\u0026token=6d16f8c6-76e9-4d95-ba23-c4c128cf377d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Girls%20Dress%2FAudio%2Flisa.mp3?alt=media\u0026token=811c9894-e605-4708-83e0-09f5758881fb</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Girls%20Dress%2FAudio%2Fflora.mp3?alt=media\u0026token=d4bc206b-14a1-4ca7-9ed7-f4dc78c71f52</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Girls%20Dress%2FAudio%2Frosy.mp3?alt=media\u0026token=4d5b54a2-a430-47a6-8622-01a21ddf7170</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Girls%20Dress%2FAudio%2Fanna.mp3?alt=media\u0026token=a6854b23-b7d5-4c2d-9040-7a4935b1da31</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Girls%20Dress%2FAudio%2Femily.mp3?alt=media\u0026token=b46eb29a-8b21-43f9-a155-e4cc5eaba647</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Girls%20Dress%2FAudio%2Fsana.mp3?alt=media\u0026token=36ed1485-05cc-42f5-983f-3ab250d96103</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Girls%20Dress%2FAudio%2Fdaisy.mp3?alt=media\u0026token=4910ec07-7eeb-4010-9c3e-912af76ac966</item>
+    </string-array>
+
+    <string-array name="boys_dress_audio">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Boys%20Dress%2FAudio%2Fjack.mp3?alt=media\u0026token=db4a8639-802c-43da-a679-50314c58be1d</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Boys%20Dress%2FAudio%2Fsmith.mp3?alt=media\u0026token=a9badb6e-08cf-43a4-856f-8cfb06520c1c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Boys%20Dress%2FAudio%2Fjim.mp3?alt=media\u0026token=306a385a-96e1-430f-be5a-35c91e980e5b</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Boys%20Dress%2FAudio%2Fbruce.mp3?alt=media\u0026token=cd20a558-c55a-4b9d-a3ef-7d788743b7d1</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Boys%20Dress%2FAudio%2Fandy.mp3?alt=media\u0026token=13b50641-56fe-4e42-972a-32ba674e6654</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Boys%20Dress%2FAudio%2Fmax.mp3?alt=media\u0026token=a58f092c-ef2d-4315-9577-61e77ba37b80</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Boys%20Dress%2FAudio%2Fpeter.mp3?alt=media\u0026token=4c283d89-245f-4d5d-ac8c-facb079c801a</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Boys%20Dress%2FAudio%2Ftom.mp3?alt=media\u0026token=e40a2602-a891-4b13-82e2-03c246ac98fd</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Boys%20Dress%2FAudio%2Fjohn.mp3?alt=media\u0026token=cd77ac69-d214-48b0-879a-fcfa08e39dba</item>
+    </string-array>
+
+    <string-array name="flash_games">
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Flash%20Games%2Fmain_shapes.png?alt=media\u0026token=e50b009a-1367-4af9-a99b-e7fe70c49b2e</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Flash%20Games%2Fmain_colors.png?alt=media\u0026token=fb8dd479-538e-40b9-b373-19b0b9fe5472</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Flash%20Games%2Fmain_auditory.png?alt=media\u0026token=2fdf2664-9bef-468a-8336-897359fb9ea1</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Flash%20Games%2Fmain_logical_thinking.png?alt=media\u0026token=d7217136-dc90-4a8e-8140-53284963bfab</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Flash%20Games%2Fmain_puzzles.png?alt=media\u0026token=bc519aae-43a4-497c-9790-a0bd41d3a6e5</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Flash%20Games%2Fmain_riddles.png?alt=media\u0026token=5ad2c9a6-5b18-46b8-8534-0048363cc241</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Flash%20Games%2Fmain_drawing_pad.png?alt=media\u0026token=b9992a7a-286c-49f5-80f6-64f65628c8fe</item>
+    </string-array>
+
+</resources>

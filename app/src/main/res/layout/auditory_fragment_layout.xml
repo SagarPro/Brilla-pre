@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/horizontalListView"
+        android:layout_margin="5dp"
+        android:id="@+id/imageGif"/>
+
+    <org.lucasr.twowayview.TwoWayView
+        android:orientation="horizontal"
+        android:id="@+id/horizontalListView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:drawSelectorOnTop="false"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="100.0sp"/>
+
+</RelativeLayout>

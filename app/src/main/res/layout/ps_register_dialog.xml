@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_gradient">
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pbCreatePS"
+        android:elevation="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Preschool"
+        android:textSize="26sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/tvCreatePreschool"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preschool Name"
+        android:inputType="textPersonName"
+        android:background="@drawable/guest_layout_bg"
+        android:textColorHint="#BDBDBD"
+        android:elevation="5dp"
+        android:layout_below="@id/tvCreatePreschool"
+        android:layout_margin="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:id="@+id/etPreschoolName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preschool Phone"
+        android:inputType="phone"
+        android:background="@drawable/guest_layout_bg"
+        android:textColorHint="#BDBDBD"
+        android:elevation="5dp"
+        android:layout_below="@id/etPreschoolName"
+        android:layout_margin="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:id="@+id/etPreschoolPhone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preschool Email / Login Id"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/guest_layout_bg"
+        android:textColorHint="#BDBDBD"
+        android:elevation="5dp"
+        android:layout_below="@id/etPreschoolPhone"
+        android:layout_margin="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:id="@+id/etPreschoolLogin"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/guest_layout_bg"
+        android:textColorHint="#BDBDBD"
+        android:elevation="5dp"
+        android:layout_below="@id/etPreschoolLogin"
+        android:layout_margin="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:id="@+id/etPreschoolPassword"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preschool Location"
+        android:inputType="text"
+        android:background="@drawable/guest_layout_bg"
+        android:textColorHint="#BDBDBD"
+        android:elevation="5dp"
+        android:layout_below="@id/etPreschoolPassword"
+        android:layout_margin="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:id="@+id/etPreschoolLocation"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/etPreschoolLocation">
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_bg"
+            android:layout_alignParentLeft="true"
+            android:text="cancel"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:id="@+id/btnCancel"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_bg"
+            android:layout_alignParentRight="true"
+            android:text="create"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:id="@+id/btnCreate"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

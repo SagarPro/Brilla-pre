@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fbutton_color_peter_river">
+
+    <include layout="@layout/flash_header"
+        android:id="@+id/header"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/rg"
+        android:layout_margin="5dp"
+        android:id="@+id/ivRiddle3"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSubmit"
+        android:layout_margin="15dp"
+        android:id="@+id/rg">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#fff"
+            android:text="Cat"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:id="@+id/rbtn1"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#fff"
+            android:text="Horse"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:id="@+id/rbtn2"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#fff"
+            android:text="Dog"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:id="@+id/rbtn3"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:background="@color/fbutton_color_midnight_blue"
+        android:layout_margin="3dp"
+        android:id="@+id/btnSubmit"/>
+
+</RelativeLayout>

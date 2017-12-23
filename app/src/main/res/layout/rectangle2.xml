@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/flash_header"
+        android:id="@+id/header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/rectangle"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rectangle"
+                android:textSize="25dp"
+                android:id="@+id/tvRectangle"
+                android:layout_marginBottom="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="35dp"
+                android:id="@+id/ivRectangle"
+                android:layout_above="@+id/tvTriangle"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/right"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Triangle"
+                android:textSize="25dp"
+                android:id="@+id/tvTriangle"
+                android:layout_marginBottom="50dp"
+                android:layout_below="@+id/tvRectangle"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="35dp"
+                android:id="@+id/ivTriangle"
+                android:layout_below="@+id/tvRectangle"
+                android:layout_above="@+id/tvCircle"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/wrong"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Circle"
+                android:textSize="25dp"
+                android:id="@+id/tvCircle"
+                android:layout_marginBottom="50dp"
+                android:layout_below="@+id/tvTriangle"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="35dp"
+                android:id="@+id/ivCircle"
+                android:layout_marginBottom="50dp"
+                android:layout_below="@+id/tvTriangle"
+                android:layout_above="@+id/tvSquare"
+                android:src="@drawable/wrong"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Square"
+                android:textSize="25dp"
+                android:layout_below="@+id/tvCircle"
+                android:id="@+id/tvSquare"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="35dp"
+                android:id="@+id/ivSquare"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/tvCircle"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/wrong"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_number": "936260931102",
+    "firebase_url": "https://brilla-47f1f.firebaseio.com",
+    "project_id": "brilla-47f1f",
+    "storage_bucket": "brilla-47f1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936260931102:android:cc201433b90215ed",
+        "android_client_info": {
+          "package_name": "com.brightkidmont.brilla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936260931102-frfg1c39ijfi64rmcl9k3uv7gsskc9ja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAggTJGX5vvrlAsSJPkTfFPSjVq7FHcp7c"
+        },
+        {
+          "current_key": "AIzaSyDPhMoVCirq6zLYNkT0pvvOMqZ14teNBvc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

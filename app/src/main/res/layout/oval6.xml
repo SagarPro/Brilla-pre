@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/flash_header"
+        android:id="@+id/header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:id="@+id/half_oval1"
+                android:layout_marginLeft="15dp"/>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:layout_toRightOf="@+id/half_oval1"
+                android:layout_marginLeft="-5dp"
+                android:id="@+id/half_oval"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/ll_half_triangle">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            android:id="@+id/half_triangle"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:id="@+id/half_rectangle"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_below="@+id/ll_half_triangle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_below="@+id/half_rectangle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/ll_half_oval">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:id="@+id/half_oval2"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

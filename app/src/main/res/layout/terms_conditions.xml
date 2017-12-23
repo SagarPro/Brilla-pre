@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/glass_effect">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titleTC"
+        android:text="@string/Title_tc"
+        android:textSize="22sp"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Terms_and_conditions"
+        android:padding="20dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:layout_below="@+id/titleTC"
+        android:id="@+id/TC"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agree"
+        android:textColor="#fff"
+        android:layout_below="@+id/TC"
+        android:textAllCaps="false"
+        android:background="@drawable/login_button_bg"
+        android:id="@+id/btnAgree"/>
+
+</RelativeLayout>

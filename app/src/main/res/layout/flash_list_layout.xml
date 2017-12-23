@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flash_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_gradient">
+
+    <include layout="@layout/custom_action_bar"
+        android:id="@+id/title"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ivShapes"
+                android:src="@drawable/main_shapes"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ivFruits"
+                android:src="@drawable/main_fruits"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ivColors"
+                android:src="@drawable/main_shapes"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ivAuditory"
+                android:src="@drawable/main_fruits"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ivLogicalThinking"
+                android:src="@drawable/main_shapes"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ivVisualDiscrimination"
+                android:src="@drawable/main_fruits"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ivJigsawPuzzles"
+                android:src="@drawable/main_shapes"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ivRiddles"
+                android:src="@drawable/main_fruits"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ivDrawingPad"
+                android:src="@drawable/main_shapes"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
