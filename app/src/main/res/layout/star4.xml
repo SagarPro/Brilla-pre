@@ -15,7 +15,6 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_below="@id/textView"
             android:orientation="horizontal"
             android:id="@+id/linearLayout1">
 
@@ -50,7 +49,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/linearLayout1"
-            android:layout_below="@+id/textView"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="50dp"
             android:id="@+id/ll_half_star">

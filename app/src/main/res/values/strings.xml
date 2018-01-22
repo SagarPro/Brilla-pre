@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Brilla Pre</string>
+    <string name="app_name">Brilla</string>
     <string name="google_maps_key">AIzaSyDQ1YKBhdT0kr0qy4ZN2LTtXExvqUggWaY</string>
     <string name="title_activity_location">Map</string>
     <string name="spinner_title">Select Category</string>
@@ -153,10 +153,10 @@
     </string-array>
 
     <string-array name="food_viewPager">
-        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FVIew%20Pager%2Ffood_morning.png?alt=media\u0026token=59cce8d6-e690-4c12-9974-08924d44fe9f</item>
-        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FVIew%20Pager%2Ffood_afternoon.png?alt=media\u0026token=5fa66873-df1a-4cab-9c17-a16472aff907</item>
-        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FVIew%20Pager%2Ffood_evening.png?alt=media\u0026token=ea4b2b9b-66be-4c61-8325-5c3905ca78df</item>
-        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FVIew%20Pager%2Ffood_night.png?alt=media\u0026token=644463fe-a279-4f09-8eda-2baf8f0fef6c</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FVIew%20Pager%2Ffood_morning1.png?alt=media\u0026token=21d44897-1d54-475a-97b8-9e781c2529a0</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FVIew%20Pager%2Ffood_afternoon1.png?alt=media\u0026token=003a87f1-db8f-4615-8b91-fd9a6eb5bc15</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FVIew%20Pager%2Ffood_evening1.png?alt=media\u0026token=ecb5d79e-bf6c-4b75-b53c-575ad1fb2db0</item>
+        <item>https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/Food%2FVIew%20Pager%2Ffood_night1.png?alt=media\u0026token=55e25e79-d1e4-406e-9f71-ad1461e5238d</item>
     </string-array>
 
     <!--food images-->

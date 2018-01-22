@@ -49,7 +49,7 @@ public class FlashListActivity extends AppCompatActivity implements View.OnClick
         bgm4.start();
 
         ImageView ivShapes = (ImageView) findViewById(R.id.ivShapes);
-        ImageView ivFruits = (ImageView) findViewById(R.id.ivFruits);
+        /*ImageView ivFruits = (ImageView) findViewById(R.id.ivFruits);*/
         ImageView ivColors = (ImageView) findViewById(R.id.ivColors);
         ImageView ivAuditory = (ImageView) findViewById(R.id.ivAuditory);
         ImageView ivLogicalThinking = (ImageView) findViewById(R.id.ivLogicalThinking);
@@ -70,12 +70,12 @@ public class FlashListActivity extends AppCompatActivity implements View.OnClick
         //array to store image urls
         ArrayList<String> imagesList = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.flash_games)));
 
-        for (int i=0; i<imageflash.size(); i++){
+        /*for (int i=0; i<imageflash.size(); i++){
             Picasso.with(getBaseContext()).load(imagesList.get(i)).error(R.drawable.bright_kid_bg).into(imageflash.get(i));
-        }
+        }*/
 
         ivShapes.setOnClickListener(this);
-        ivFruits.setOnClickListener(this);
+        /*ivFruits.setOnClickListener(this);*/
         ivColors.setOnClickListener(this);
         ivAuditory.setOnClickListener(this);
         ivLogicalThinking.setOnClickListener(this);
@@ -95,10 +95,10 @@ public class FlashListActivity extends AppCompatActivity implements View.OnClick
                 tts.speak("Shapes", TextToSpeech.QUEUE_FLUSH, null);
                 startActivity(new Intent(FlashListActivity.this, ShapesActivity.class));
                 break;
-            case R.id.ivFruits:
+            /*case R.id.ivFruits:
                 tts.speak("Fruits", TextToSpeech.QUEUE_FLUSH, null);
                 Toast.makeText(getBaseContext(), "Currently In Development", Toast.LENGTH_SHORT).show();
-                break;
+                break;*/
             case R.id.ivColors:
                 tts.speak("Colors", TextToSpeech.QUEUE_FLUSH, null);
                 startActivity(new Intent(FlashListActivity.this, ColorsActivity.class));

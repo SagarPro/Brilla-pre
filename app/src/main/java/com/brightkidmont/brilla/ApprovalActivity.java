@@ -355,6 +355,8 @@ public class ApprovalActivity extends AppCompatActivity {
 
     //Declining user for respective preschool
     public void decline(){
+        mFirebaseInstance = FirebaseDatabase.getInstance();
+        mFirebaseDatabase = mFirebaseInstance.getReference().child("users").child(userKey);
         mFirebaseDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -447,6 +449,7 @@ public class ApprovalActivity extends AppCompatActivity {
 
     //avoiding misClick on decline button
     public void showDeclineDialog() {
+        adminPassword();
         final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         LayoutInflater inflater = this.getLayoutInflater();
         final View dialogView = inflater.inflate(R.layout.custom_dialog, null);
@@ -456,10 +459,10 @@ public class ApprovalActivity extends AppCompatActivity {
         dialogBuilder.setMessage("Please Enter Admin Password To Delete This Entry");
         dialogBuilder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
-                String adminPassword = etDialog.getText().toString();
-                if(TextUtils.isEmpty(adminPassword)){
+                String password = etDialog.getText().toString();
+                if(TextUtils.isEmpty(password)){
                     Toast.makeText(getBaseContext(),"Please Enter Admin Password", Toast.LENGTH_SHORT).show();
-                } else if(adminPassword.equals(aPassword)) {
+                } else if(password.equals(aPassword)) {
                     decline();
                     openAdmin();
                 } else {

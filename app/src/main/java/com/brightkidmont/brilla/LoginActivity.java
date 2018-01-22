@@ -38,10 +38,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private ProgressBar loginProgress;
     private LinearLayout loginLayout;
     private SharedPreferences adminPreferences, loginPreferences;
-    public static MediaPlayer player;
-    public static int bgmPosition;
     AlertDialog.Builder builder;
-    String fp, audioUrl;
+    String fp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,20 +68,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         loginProgress.getIndeterminateDrawable().setColorFilter(0xFFcc0000, android.graphics.PorterDuff.Mode.MULTIPLY);
         loginProgress.setVisibility(View.GONE);
         loginLayout.setVisibility(View.GONE);
-
-        player = new MediaPlayer();
-        player.setAudioStreamType(AudioManager.STREAM_MUSIC);
-        //audio url to play bgm
-        audioUrl = "https://firebasestorage.googleapis.com/v0/b/brilla-47f1f.appspot.com/o/BG%20Music%2FVenice%20Beach%20-%20Topher%20Mohr%20and%20Alex%20Elena%20-%20YouTube%20Audio%20Library.mp3?alt=media&token=b0b5ff9f-48cc-4294-8567-b9055b7908b1";
-
-        try {
-            player.setDataSource(audioUrl);
-            player.prepare();
-            player.setLooping(true);
-            player.start();
-        } catch (Exception e) {
-            Toast.makeText(this, "Failed to play music...", Toast.LENGTH_SHORT).show();
-        }
 
         btnLogin.setOnClickListener(this);
         tvAdminLogin.setOnClickListener(this);
@@ -412,35 +396,4 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        //Pause bgm and store current position to resume later
-        player.pause();
-        bgmPosition = player.getCurrentPosition();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        //Play bgm by taking the position
-        player.seekTo(bgmPosition);
-        player.start();
-    }
-
-    @Override
-    public void onBackPressed() {
-        //when app is closed stop all the musics and reset the mediaPlayer
-        player.stop();
-        player.reset();
-        this.moveTaskToBack(true);
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        //when app is destroyed stop all the musics and reset the mediaPlayer
-        player.stop();
-        player.reset();
-    }
 }

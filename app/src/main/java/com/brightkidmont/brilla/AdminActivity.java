@@ -220,7 +220,7 @@ public class AdminActivity extends AppCompatActivity {
             loginPreferences = getSharedPreferences("LOGINTYPE", MODE_PRIVATE);
             SharedPreferences.Editor editor = loginPreferences.edit();
             editor.putString("LOGIN", "logout");
-            editor.commit();
+            editor.apply();
             startActivity(new Intent(getBaseContext(), LoginActivity.class));
             finish();
         }

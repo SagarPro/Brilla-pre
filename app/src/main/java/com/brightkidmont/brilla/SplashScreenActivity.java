@@ -1,5 +1,6 @@
 package com.brightkidmont.brilla;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
@@ -7,6 +8,8 @@ import android.net.NetworkInfo;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.brightkidmont.brilla.utils.GuestExpiration;
 import com.google.firebase.database.DataSnapshot;
@@ -35,10 +38,29 @@ public class SplashScreenActivity extends AppCompatActivity {
         login = loginPreferences.getString("LOGIN", "logout");
 
         //Checking for internet connection and displaying respective messages
-        if (isOnline()){
+        /*if (isOnline()){
             Toast.makeText(this, "Connected", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Not Connected", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please check with your internet connection and try again.", Toast.LENGTH_SHORT).show();
+        }*/
+
+        if(!isOnline()){
+            final Dialog dialog = new Dialog(this);
+            dialog.setContentView(R.layout.network_dialog);
+            dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
+            TextView tvTryAgain = (TextView) dialog.findViewById(R.id.tvTryAgain);
+            tvTryAgain.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dialog.dismiss();
+                    Intent i = getBaseContext().getPackageManager().getLaunchIntentForPackage( getBaseContext().getPackageName() );
+                    i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(i);
+                }
+            });
+            dialog.show();
+
         }
 
         //getting guest expiration values from database to update the expired guest user details

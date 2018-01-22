@@ -19,8 +19,7 @@
             android:text="You Counted 0 Circles"
             android:textSize="25dp"
             android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_below="@+id/textView"/>
+            android:layout_marginTop="20dp"/>
 
         <ImageView
             android:layout_width="150dp"

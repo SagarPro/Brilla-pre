@@ -1,6 +1,7 @@
 package com.brightkidmont.brilla;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -61,7 +62,8 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
     public static int bgm1PausePosition, bgm2PausePosition, bgm3PausePosition, bgm4PausePosition, bgm5PausePosition, bgm6PausePosition;
     private static ViewPager mPager;
     private static int currentPage = 0;
-    List<Bitmap> bitmapList = new ArrayList<>();
+    static List<Bitmap> bitmapList = new ArrayList<>();
+    private static Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +77,8 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
         TextView tvCustom = (TextView) findViewById(R.id.tvCustom);
         tvCustom.setText("Brilla Pre");
         tvCustom.setTypeface(font);
+
+        context = this;
 
         bgm();
 
@@ -305,7 +309,7 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
         }, 3000, 3000);
     }
 
-    public class loadImages extends AsyncTask<URL, Void, Bitmap>{
+    public static class loadImages extends AsyncTask<URL, Void, Bitmap>{
 
         @Override
         protected Bitmap doInBackground(URL... params) {
@@ -323,7 +327,7 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
 
         @Override
         protected void onPostExecute(Bitmap result) {
-            mPager.setAdapter(new MyAdapter(HomePageActivity.this, bitmapList));
+            mPager.setAdapter(new MyAdapter(context, bitmapList));
             //setCircleIndicator();
         }
 

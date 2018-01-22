@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.brightkidmont.brilla">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,11 +13,13 @@
         android:name=".ScreenOrientation"
         android:allowBackup="true"
         android:hardwareAccelerated="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/launcher_icon"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
-        android:theme="@style/CustomActionBar">
+        android:debuggable="false"
+        android:theme="@style/CustomActionBar"
+        tools:ignore="HardcodedDebugMode">
 
         <activity android:name=".LoginActivity"
             android:windowSoftInputMode="adjustResize" />

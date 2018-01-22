@@ -26,19 +26,19 @@
                 android:scaleType="fitXY"
                 android:layout_margin="5dp"/>
 
-            <ImageView
+            <!--<ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:id="@+id/ivFruits"
                 android:src="@drawable/main_fruits"
                 android:scaleType="fitXY"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"/>-->
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:id="@+id/ivColors"
-                android:src="@drawable/main_shapes"
+                android:src="@drawable/main_colors"
                 android:scaleType="fitXY"
                 android:layout_margin="5dp"/>
 
@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:id="@+id/ivAuditory"
-                android:src="@drawable/main_fruits"
+                android:src="@drawable/main_auditory"
                 android:scaleType="fitXY"
                 android:layout_margin="5dp"/>
 
@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:id="@+id/ivLogicalThinking"
-                android:src="@drawable/main_shapes"
+                android:src="@drawable/main_logical_thinking"
                 android:scaleType="fitXY"
                 android:layout_margin="5dp"/>
 
@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:id="@+id/ivVisualDiscrimination"
-                android:src="@drawable/main_fruits"
+                android:src="@drawable/main_visual_discrimination"
                 android:scaleType="fitXY"
                 android:layout_margin="5dp"/>
 
@@ -70,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:id="@+id/ivJigsawPuzzles"
-                android:src="@drawable/main_shapes"
+                android:src="@drawable/main_puzzles"
                 android:scaleType="fitXY"
                 android:layout_margin="5dp"/>
 
@@ -78,7 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:id="@+id/ivRiddles"
-                android:src="@drawable/main_fruits"
+                android:src="@drawable/main_riddles"
                 android:scaleType="fitXY"
                 android:layout_margin="5dp"/>
 
@@ -86,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:id="@+id/ivDrawingPad"
-                android:src="@drawable/main_shapes"
+                android:src="@drawable/main_drawing_pad"
                 android:scaleType="fitXY"
                 android:layout_margin="5dp"/>
 
