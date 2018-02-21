@@ -92,6 +92,8 @@ public class PickFoodActivity extends AppCompatActivity implements View.OnClickL
         llSnacks.setOnClickListener(this);
         llDinner.setOnClickListener(this);
 
+        Toast.makeText(context, "Release your mobile from silent mode", Toast.LENGTH_SHORT).show();
+
     }
 
     //view pager for food type

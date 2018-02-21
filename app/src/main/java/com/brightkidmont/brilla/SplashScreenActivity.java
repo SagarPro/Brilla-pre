@@ -61,7 +61,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             });
             dialog.show();
 
-        }
+        } else {
 
         //getting guest expiration values from database to update the expired guest user details
         FirebaseDatabase.getInstance().getReference().child("guestExpiration").addListenerForSingleValueEvent(new ValueEventListener() {
@@ -113,6 +113,8 @@ public class SplashScreenActivity extends AppCompatActivity {
                 Toast.makeText(SplashScreenActivity.this, "Failed to get data from database.", Toast.LENGTH_SHORT).show();
             }
         });
+		
+		}
     }
 
     //method to see which type of user is already logged in using sharedpreferences and start respective activity

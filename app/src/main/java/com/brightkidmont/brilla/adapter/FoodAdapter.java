@@ -2,6 +2,7 @@ package com.brightkidmont.brilla.adapter;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Handler;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.widget.RecyclerView;
@@ -16,6 +17,7 @@ import com.brightkidmont.brilla.R;
 import com.brightkidmont.brilla.interactions.PickingFoodActivity;
 import com.squareup.picasso.Picasso;
 
+import java.security.PrivateKey;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -38,12 +40,25 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> im
     private ArrayList<String> alImage;
     private Context context;
     public static int foodCount = 0;
+    private int[] breakFastList = {R.raw.apple,R.raw.banana,R.raw.cereals,R.raw.cheese,R.raw.corn_salad,R.raw.dosa,R.raw.egg,R.raw.idly,
+            R.raw.milk_shake,R.raw.muffin,R.raw.nuts,R.raw.pan_cake,R.raw.papaya_pieces,R.raw.paratha,R.raw.pav_baji,
+            R.raw.poha,R.raw.poori,R.raw.sanwitch,R.raw.tikkis, R.raw.upma};
+    private int[] lunchList = {R.raw.butter_milk, R.raw.chapathi,R.raw.chicken, R.raw.curd_rice,R.raw.curry,R.raw.dal,R.raw.fish,
+            R.raw.kichidi,R.raw.lassi,R.raw.omlette,R.raw.paneer,R.raw.papad,R.raw.paratha,R.raw.payesha,R.raw.pulov,R.raw.rice,
+            R.raw.sambar,R.raw.shree_khand,R.raw.veg_curry,R.raw.veg_rolls};
+    private int[] snackList = {R.raw.apple_pie,R.raw.banana_pieces,R.raw.banana_cake,R.raw.bhel_puri,R.raw.buiscuits,R.raw.carrot_cucumber,
+            R.raw.cookies,R.raw.dahi_vada,R.raw.gulab_jamoon,R.raw.laddu,R.raw.rasgulla};
+    private int[] dinnerList = {R.raw.biriyani,R.raw.chapathi,R.raw.chicken,R.raw.curd_rice,R.raw.egg_rice,R.raw.fish_fried_rice,
+            R.raw.kebab,R.raw.mushroom_biryani,R.raw.mutton_biryani,R.raw.paneer,R.raw.papad,R.raw.paratha,R.raw.payesha,
+            R.raw.rice,R.raw.roti,R.raw.sambar,R.raw.veg_curry,R.raw.veg_pulov};
+    private MediaPlayer player;
 
     public FoodAdapter(Context context, ArrayList<String> alName, ArrayList<String> alImage) {
         super();
         this.context = context;
         this.alName = alName;
         this.alImage = alImage;
+        player = new MediaPlayer();
     }
 
     @Override
@@ -68,8 +83,11 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> im
 
                     //Storing all audio files in respective array
                     Boolean playing = false;
-                    for(int i=0; i<20; i++) {
-                        if (mpBreakfast[i].isPlaying()) {
+                    if (player.isPlaying()) {
+                        playing = true;
+                    }
+                    /*for(int i=0; i<20; i++) {
+                        if (mpBreakFast[i].isPlaying()) {
                             playing = true;
                             break;
                         }
@@ -91,7 +109,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> im
                             playing = true;
                             break;
                         }
-                    }
+                    }*/
 
                     if(playing){
                         Toast.makeText(context, "Please wait a sec", Toast.LENGTH_SHORT).show();
@@ -192,18 +210,23 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> im
     private void audio(final int position){
         SharedPreferences pref = context.getSharedPreferences("FOODTYPE", MODE_PRIVATE);
         String foodType = pref.getString("TYPE", "BreakFast");
+        player.reset();
         switch (foodType){
             case "BreakFast":
-                mpBreakfast[position].start();
+                player = MediaPlayer.create(context,breakFastList[position]);
+                player.start();
                 break;
             case "Lunch":
-                mpLunch[position].start();
+                player = MediaPlayer.create(context,lunchList[position]);
+                player.start();
                 break;
             case "Snacks":
-                mpSnacks[position].start();
+                player = MediaPlayer.create(context,snackList[position]);
+                player.start();
                 break;
             case "Dinner":
-                mpDinner[position].start();
+                player = MediaPlayer.create(context,dinnerList[position]);
+                player.start();
                 break;
         }
     }

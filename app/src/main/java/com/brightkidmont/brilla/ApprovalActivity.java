@@ -310,7 +310,7 @@ public class ApprovalActivity extends AppCompatActivity {
                 });
     }
 
-    //Approving user as user for respective preschool
+    //Approving user for respective preschool
     public void approve(){
 
         int permissionCheck = ContextCompat.checkSelfPermission(ApprovalActivity.this, android.Manifest.permission.SEND_SMS);

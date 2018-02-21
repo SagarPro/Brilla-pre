@@ -30,6 +30,7 @@ import java.util.List;
 public class AdminActivity extends AppCompatActivity {
 
     private ListView lvUsers;
+    private TextView tvUserType;
     static AdminActivity adminActivity;
     private Button btnAllUsers, btnNewUsers;
     private SharedPreferences loginPreferences;
@@ -74,6 +75,8 @@ public class AdminActivity extends AppCompatActivity {
         mFirebaseDatabase = mFirebaseInstance.getReference().child("users");
 
         lvUsers = (ListView) findViewById(R.id.lvUsers);
+        tvUserType = findViewById(R.id.tvUserType);
+        tvUserType.setText("New Users");
         btnAllUsers = (Button) findViewById(R.id.btnAllUsers);
         btnNewUsers = (Button) findViewById(R.id.btnNewUsers);
         btnNewUsers.setVisibility(View.GONE);
@@ -118,6 +121,7 @@ public class AdminActivity extends AppCompatActivity {
         btnAllUsers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                tvUserType.setText("Approved Users");
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putString("UserType", "approved");
                 editor.commit();
@@ -162,6 +166,7 @@ public class AdminActivity extends AppCompatActivity {
         btnNewUsers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                tvUserType.setText("New Users");
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putString("UserType", "new");
                 editor.commit();

@@ -32,13 +32,25 @@
 
     </android.support.v7.widget.Toolbar>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Type"
+        android:textStyle="bold"
+        android:textColor="@color/fbutton_color_clouds"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tbCustom"
+        android:textSize="22sp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tvUserType"/>
+
     <ListView
         android:id="@+id/lvUsers"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_margin="5dp"
         android:layout_above="@+id/btnAllUsers"
-        android:layout_below="@+id/tbCustom"
+        android:layout_below="@+id/tvUserType"
         android:divider="@null"
         android:dividerHeight="0.0sp">
     </ListView>
