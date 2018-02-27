@@ -26,7 +26,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.brightkidmont.brilla.adapter.MyAdapter;
@@ -57,6 +59,8 @@ import me.relex.circleindicator.CircleIndicator;
 public class HomePageActivity extends AppCompatActivity implements View.OnClickListener{
 
     private SharedPreferences loginPreferences;
+    private LinearLayout llHomePage;
+    private ProgressBar pbHP;
     public static String genderDress = "gender";
     public static MediaPlayer bgm1, bgm2, bgm3, bgm4, bgm5, bgm6;
     public static int bgm1PausePosition, bgm2PausePosition, bgm3PausePosition, bgm4PausePosition, bgm5PausePosition, bgm6PausePosition;
@@ -79,6 +83,12 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
         tvCustom.setTypeface(font);
 
         context = this;
+
+        llHomePage = (LinearLayout) findViewById(R.id.llHomePage);
+        llHomePage.setVisibility(View.GONE);
+
+        pbHP = (ProgressBar) findViewById(R.id.pbHP);
+        pbHP.setVisibility(View.VISIBLE);
 
         bgm();
 
@@ -387,6 +397,8 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
             @Override
             public void onPrepared(MediaPlayer mp) {
                 bgm1.start();
+                pbHP.setVisibility(View.GONE);
+                llHomePage.setVisibility(View.VISIBLE);
             }
         });
     }
