@@ -18,6 +18,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,6 +45,7 @@ import static com.brightkidmont.brilla.HomePageActivity.bgm3PausePosition;
 public class PickFoodActivity extends AppCompatActivity implements View.OnClickListener{
 
     Context context;
+    private ScrollView layout_scroll;
     public static MediaPlayer[] mpFood = new MediaPlayer[4];
     public static MediaPlayer[] mpBreakfast = new MediaPlayer[20];
     public static MediaPlayer[] mpLunch = new MediaPlayer[20];
@@ -66,6 +69,9 @@ public class PickFoodActivity extends AppCompatActivity implements View.OnClickL
         TextView tvCustom = (TextView) findViewById(R.id.tvCustom);
         tvCustom.setText("Brilla Pre");
         tvCustom.setTypeface(font);
+
+        layout_scroll = findViewById(R.id.layout_scroll);
+        layout_scroll.setVisibility(View.GONE);
 
         init();
         context = this;
@@ -182,6 +188,7 @@ public class PickFoodActivity extends AppCompatActivity implements View.OnClickL
             @Override
             public void onPrepared(MediaPlayer mp) {
                 pbFood.setVisibility(View.GONE);
+                layout_scroll.setVisibility(View.VISIBLE);
             }
         });
     }
