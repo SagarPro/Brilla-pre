@@ -202,7 +202,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     Toast.makeText(getBaseContext(),"Please Enter Your Login Details", Toast.LENGTH_SHORT).show();
                     loginProgress.setVisibility(View.GONE);
                     loginLayout.setVisibility(View.GONE);
-                } else if(email.equals("SuperAdmin") && password.equals("SuperAdmin")) { //if email and password belongs to superAdmin
+                } else if(email.equals("email") && password.equals("password")) { //if email and password belongs to superAdmin
                     loginProgress.setVisibility(View.GONE);
                     loginLayout.setVisibility(View.GONE);
                     startActivity(new Intent(LoginActivity.this, SuperAdminActivity.class));
